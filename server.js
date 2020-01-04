@@ -4,23 +4,27 @@ var express = require("express");
 var path = require("path");
 
 var app = express();
+app.use(express.static("public"));
+
+var app2 = express();
+app2.use(express.static("arTest"));
 
 var PORT = process.env.PORT || 4040;
 
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
+  res.sendFile(path.join(__dirname, "index.html"));
 });
 
 app.get("/login", function (req, res) {
-  res.sendFile(path.join(__dirname, "./public/login.html"));
+  res.sendFile(path.join(__dirname, "login.html"));
 });
 
-app.get("/display", function (req, res) {
-  res.sendFile(path.join(__dirname, "./public/results.html"));
+app2.get("/display", function (req, res) {
+  res.sendFile(path.join(__dirname, "results.html"));
 });
 
 app.get("/AR", function (req, res) {
-  res.sendFile(path.join(__dirname, "./arTest/arExample.html"));
+  res.sendFile(path.join(__dirname, "arExample.html"));
 });
 
 app.listen(PORT, function () {
