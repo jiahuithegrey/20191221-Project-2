@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Favicon and CSS -->
+    <link rel="shortcut icon" type="image/png" href="img/beer.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Take A Picture</title>
+</head>
+
+<body>
+    <h1>Recipe Logger</h1>
+    <!-- Camera window  -->
+    <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <button id="startbutton">Snap a photo of your food!</button>
+    </div>
+    <canvas id="canvas">
+    </canvas>
+    <div class="output">
+        <img id="photo" alt="The screen capture will appear in this box.">
+    </div>
+
+    <!-- Button for sending the picture.  -->
+    <!-- this is not currently linked to anything  -->
+    <button id="submit-button">Find out what it's made of!</button>
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/cameraOp.js"></script>
+    <script src="./js/frontend.js"></script>
+
+    <footer class="page-footer orange lighten-1">
+        <div class="container center">
+            © 2019 Copyright Harry Jasmine Nicole Scott O.
+        </div>
+    </footer>
+</body>
+
+</html>
