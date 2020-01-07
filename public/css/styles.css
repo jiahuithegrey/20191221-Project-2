@@ -37,6 +37,13 @@ nav {
 #app-logo{
   width: 20px;
 }
+.process{
+  margin-top: 50px;
+}
+#process-title{
+  display: block;
+  margin-top: 20px;
+}
 .button-group{
   margin-top: 50px;
 }

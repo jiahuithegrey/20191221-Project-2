@@ -24,29 +24,47 @@
 </head>
  
 <body>
-    <!-- Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-        <a class="navbar-brand" href="index.html"><strong id="project-name">Smart Food Logger</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="profile.html">Application</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="intro.html">Introduction</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="last-nav" href="">Contact</a>
-                </li>
-            </ul>
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                  <li><a href="#" class="text-white">Like on Facebook</a></li>
+                  <li><a href="#" class="text-white">Email me</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    </nav>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img id="app-logo" src="img/food.png">
+                <strong>&nbspMySmartRecipe</strong>
+            </a>
+            <!-- how to make toggle work? -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+        </div>
+    </header>
 
+    <div class="process">
+        <div class="text-center">
+            <a href="https://docs.clarifai.com/">
+                <img id="process-diagram" src="img/process.png" alt="process-diagram"></a>
+            <h8 class="text-muted" id="process-title">From Clarifai Guide</h8>
+        </div>
+    </div>
+    
     <div class="container">
         <div class="row justify-content-around button-group">
             <div class="col-sm-12 col-md-4 text-center">       
@@ -68,7 +86,7 @@
     <script src="script.js"></script>
 
     <!-- sticky footer? -->
-    <footer class="bg-light text-center text-muted">
+    <footer class="bg-dark text-center text-muted">
         <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
     </footer>
 
