@@ -6,7 +6,7 @@
 html {
   scroll-behavior: smooth;
 }
-/* Top Navbar */
+/* Top Navbar --------------------------*/
 nav {
   padding: 5px 10px !important;
   border-bottom: 1px solid #ccc;
@@ -33,9 +33,14 @@ nav {
 .active {
   color: #ec866f !important;
 }
+/* index css---------------------------------------------------- */
+.button-group{
+  margin-top: 200px;
+}
 #camera-button, #upload-button{
   color: white;
   background-color: #a9d7cc;
+  padding: 10px 20px;
 }
 #ingredient-button{
   text-decoration: none;
