@@ -1,47 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* scroll smoothly effect */
+html {
+  scroll-behavior: smooth;
+}
+/* Top Navbar */
+nav {
+  padding: 5px 10px !important;
+  border-bottom: 1px solid #ccc;
+}
+.navbar-brand {
+  color: #ec866f !important;
+}
+#project-name {
+  margin-bottom: 0;
+}
+.nav-item {
+  font-weight: bold;
+}
+.nav-link {
+  border-right: 1px solid #ec866f;
+  padding: 0 12px !important;
+}
+#last-nav {
+  border-right: 0;
+}
+.nav-scroll-bg {
+  background-color: white;
+}
+.active {
+  color: #ec866f !important;
+}
+#camera-button, #upload-button{
+  color: white;
+  background-color: #a9d7cc;
+}
+#ingredient-button{
+  text-decoration: none;
+  color: white;
+  background-color: #ec866f;
+}
+/* camera css --------------------------------------------*/
 #video {
-    border: 1px solid black;
-    box-shadow: 2px 2px 3px black;
-    width:320px;
-    height:240px;
-  }
-  
-  #photo {
-    border: 1px solid black;
-    box-shadow: 2px 2px 3px black;
-    width:320px;
-    height:240px;
-  }
-  
-  #canvas {
-    display:none;
-  }
-  
-  .camera {
-    width: 340px;
-    display:inline-block;
-  }
-  
-  .output {
-    width: 340px;
-    display:inline-block;
-  }
-  
-  #startbutton {
-    display:block;
-    position:relative;
-    margin-left:auto;
-    margin-right:auto;
-    bottom:32px;
-    background-color: rgba(0, 150, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.7);
-    box-shadow: 0px 0px 1px 2px rgba(0, 0, 0, 0.2);
-    font-size: 14px;
-    font-family: "Lucida Grande", "Arial", sans-serif;
-    color: rgba(255, 255, 255, 1.0);
-  }
-  
-  .contentarea {
-    font-size: 16px;
-    font-family: "Lucida Grande", "Arial", sans-serif;
-    width: 760px;
-  }
+  border: 1px solid black;
+  /* width: 320px;
+  height: 240px; */
+}
+#photo {
+  border: 1px solid black;
+  /* width: 320px;
+  height: 240px; */
+}
+#canvas {
+  display: none;
+}
+.camera {
+  /* width: 340px; */
+  display: inline-block;
+}
+.output {
+  /* width: 340px; */
+  display: inline-block;
+}
+#startbutton {
+  color: white;
+  background-color: #a9d7cc;
+}
+.contentarea {
+  font-size: 16px;
+  font-family: "Lucida Grande", "Arial", sans-serif;
+  /* width: 760px; */
+}
+.button-group{
+  margin-top:200px;
+}
+
+
+/* Bottom Footer */
+footer {
+  margin-top: 100px;
+  position: absolute;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer */
+}
+#copyright {
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  height: 40px;
+}
