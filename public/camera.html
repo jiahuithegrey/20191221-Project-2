@@ -46,13 +46,16 @@
             </ul>
         </div>
     </nav>
+
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-5">
                 <div class="camera">
                     <video id="video">Video stream not available.</video>
                     <button id="startbutton">Snap a photo of your food!</button>
                 </div>
+            </div>
+            <div class="col-sm-12 col-md-5">
                 <canvas id="canvas">
                 </canvas>
                 <div class="output">
@@ -60,8 +63,19 @@
                 </div>
             </div>  
         </div>
+    
+        <div class="row">
+            <div class="col-sm-10 col-md-8">
+                <a href="camera.html" id="ingredient-button" role="button" target="_blank">Snap a photo of your food!</a> 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 col-md-8">
+                <a href="camera.html" id="ingredient-button" role="button" target="_blank">See Possible Ingredients</a>  
+            </div>    
+        </div>
     </div>
-    <button id="ingredient-button">See Possible Ingredients</button>
+
 
     <div class="ingredients">
 
@@ -78,11 +92,8 @@
     <script src="./js/cameraOp.js"></script>
     <script src="./js/frontend.js"></script>
 
-    <footer class="page-footer">
-        <div class="container center">
-            © 2019 Copyright Harry Jasmine Nicole Scott O.
-        </div>
+    <footer class="bg-light text-center text-muted">
+        <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
     </footer>
 </body>
-
 </html>
