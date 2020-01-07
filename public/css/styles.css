@@ -42,11 +42,7 @@ nav {
   background-color: #a9d7cc;
   padding: 10px 20px;
 }
-#ingredient-button{
-  text-decoration: none;
-  color: white;
-  background-color: #ec866f;
-}
+
 /* camera css --------------------------------------------*/
 #video {
   border: 1px solid black;
@@ -69,30 +65,38 @@ nav {
   /* width: 340px; */
   display: inline-block;
 }
-#startbutton {
-  color: white;
-  background-color: #a9d7cc;
-}
 .contentarea {
   font-size: 16px;
   font-family: "Lucida Grande", "Arial", sans-serif;
   /* width: 760px; */
 }
-.button-group{
-  margin-top:200px;
+.button-group, .camera-group{
+  margin-top:100px;
+}
+#startbutton{
+  color: white;
+  background-color: #ec866f;
+}
+.ingredient-row{
+  margin-top: 30px;
+}
+#ingredient-button {
+  text-decoration: none;
+  color: white;
+  background-color: #ec866f;
+  padding: 10px 20px;
 }
 
-
-/* Bottom Footer */
+/* Bottom Footer --------------------------------------------*/
 footer {
-  margin-top: 100px;
+  margin-top: 370px;
   position: absolute;
   width: 100%;
   height: 60px; /* Set the fixed height of the footer */
 }
 #copyright {
   font-size: 14px;
-  margin-top: 15px;
+  margin-top: 20px;
   margin-bottom: 0;
   height: 40px;
 }
