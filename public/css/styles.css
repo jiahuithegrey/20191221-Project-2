@@ -17,7 +17,7 @@
 }
 /* index.html css---------------------------------------------------- */
 #app-logo{
-  width: 24px;
+  width: 28px;
 }
 #app-name{
   font-size: 24px;
@@ -33,9 +33,11 @@
   margin-top: 50px;
 }
 #camera-button, #upload-button{
+  font-size: 18px;
+  font-weight: bold;
   color: white;
   background-color: #e16556;
-  padding: 10px 30px;
+  padding: 15px 40px;
 }
 
 /* camera.html css --------------------------------------------*/
@@ -54,14 +56,12 @@
   display: inline-block;
 }
 .output {
-  /* width: 340px; */
   display: inline-block;
 }
 /* what's this? */
 .contentarea { 
   font-size: 16px;
   font-family: "Lucida Grande", "Arial", sans-serif;
-  /* width: 760px; */
 }
 .camera-group{
   margin-top:50px;
@@ -73,11 +73,15 @@
   margin-top: 30px;
 }
 #start-button{
+  font-size: 18px;
+  font-weight: bold;
   color: white;
   background-color: #e16556;
   padding: 10px 20px;
 }
 #ingredient-button {
+  font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
   color: white;
   background-color: #e16556;
