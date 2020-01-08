@@ -19,11 +19,11 @@ app.get("/login", function (req, res) {
   res.sendFile(path.join(__dirname, "login.html"));
 });
 
-app2.get("/display", function (req, res) {
+app.get("/display", function (req, res) {
   res.sendFile(path.join(__dirname, "results.html"));
 });
 
-app.get("/AR", function (req, res) {
+app2.get("/AR", function (req, res) {
   res.sendFile(path.join(__dirname, "arExample.html"));
 });
 
