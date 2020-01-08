@@ -110,6 +110,14 @@ nav {
 .main{
   margin-top:40px;
 }
+#recipe-button{
+  color: white;
+  background-color: #ec866f;
+  padding: 10px 20px;
+}
+
+
+
 /* Bottom Footer --------------------------------------------*/
 footer {
   margin-top: 150px;
