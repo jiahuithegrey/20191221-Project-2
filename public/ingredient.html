@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,6 +24,7 @@
 </head>
  
 <body>
+    <!-- Top Navbar -->
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
           <div class="container">
@@ -44,38 +45,64 @@
           </div>
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-between">
+          <div class="container d-flex justify-content-between">
             <a href="index.html" class="navbar-brand d-flex align-items-center">
-                <img id="app-logo" src="img/food.png">
-                <strong>&nbspMySmartRecipe</strong>
+              <img id="app-logo" src="img/food.png">
+              <strong>&nbspMySmartRecipe</strong>
             </a>
             <!-- how to make toggle work? -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
             </button>
-            </div>
+          </div>
         </div>
-    </header>
+      </header>
 
-    <div class="process">
-        <div class="text-center">
-            <a href="https://docs.clarifai.com/">
-                <img id="process-diagram" src="img/process.png" alt="process-diagram"></a>
-            <h8 class="text-muted" id="process-title">From Clarifai Guide</h8>
+    <div class="container main">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <img id="photo" alt="The screen capture will appear in this box.">
+                <a href="camera.html" id="retake-button" role="button">Retake the photo</a> 
+                <!-- <button id="retake-button">Retake the photo</button> -->
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">PREDICTED INGREDIENT</th>
+                        <th scope="col">PROBABILITY</th>
+                        <th scope="col">SELECTION</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>syrup</td>
+                        <td>98.8%</td>
+                        <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
+                      </tr>
+                      <tr>
+                        <td>waffle</td>
+                        <td>98.0%</td>
+                        <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
+                      </tr>
+                      <tr>
+                        <td>french toast</td>
+                        <td>95.7%</td>
+                        <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
+                      </tr>
+                      <tr>
+                        <td>coffee</td>
+                        <td>93.4%</td>
+                        <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
         </div>
     </div>
     
-    <div class="container">
-        <div class="row justify-content-around button-group">
-            <div class="col-sm-12 col-md-4 text-center">       
-                <a href="camera.html" id="camera-button" role="button">Snap a photo!</a>  
-            </div>
-            <div class="col-sm-1 col-md-4 text-center">  
-            <a href="upload.html" id="upload-button" role="button">Upload a pic!</a>              
-            </div>
-        </div>
-    </div>
-
+    
+    
     <!-- Compiled and minified JavaScript -->
     <!-- jquery CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
@@ -83,10 +110,10 @@
 
     <script src="script.js"></script>
 
-    <!-- sticky footer? -->
+    <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
     <footer class="bg-dark text-center text-muted">
         <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
     </footer>
-
 </body>
 </html>
