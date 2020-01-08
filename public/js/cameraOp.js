@@ -27,7 +27,7 @@
         video = document.getElementById('video');
         canvas = document.getElementById('canvas');
         photo = document.getElementById('photo');
-        startbutton = document.getElementById('startbutton');
+        startbutton = document.getElementById('start-button');
 
         navigator.mediaDevices.getUserMedia({ video: true, audio: false })
             .then(function (stream) {
