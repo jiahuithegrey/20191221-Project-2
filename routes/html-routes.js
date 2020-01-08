@@ -25,4 +25,12 @@ module.exports = function(app) {
     app.get("/upload", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/upload.html"));
     });
+
+    app.get("/recipe", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/recipe.html"));
+    });
+
+    app.get("/ingredient", function(req, res) {
+        res.sendFile(path.join(__dirname, "../public/ingredient.html"));
+    });
 }
