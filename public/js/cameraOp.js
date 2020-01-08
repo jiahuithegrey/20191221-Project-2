@@ -29,13 +29,21 @@
         photo = document.getElementById('photo');
         startbutton = document.getElementById('startbutton');
 
-        navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+        navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: { exact: "environment" } } })
             .then(function (stream) {
                 video.srcObject = stream;
                 video.play();
             })
             .catch(function (err) {
-                console.log("An error occurred: " + err);
+                console.log("An error occurred with external camera: " + err);
+                navigator.mediaDevices.getUserMedia({ audio: false, video: true })
+                    .then(function (stream) {
+                        video.srcObject = stream;
+                        video.play();
+                    })
+                    .catch(function (err) {
+                        console.log("An error occurred: " + err);
+                    });
             });
 
         video.addEventListener('canplay', function (ev) {

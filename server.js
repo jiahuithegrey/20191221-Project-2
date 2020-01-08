@@ -1,33 +1,33 @@
 //Possibly Change this to sequelize
-
 var express = require("express");
-var path = require("path");
+var exphbs = require("express-handlebars");
 
+// Sets up the Express App
 var app = express();
+var PORT = process.env.PORT || 8080;
+
+// Requiring our models for syncing
+var db = require("./models");
+
+// Sets up the Express app to handle data parsing
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// Static directory
 app.use(express.static("public"));
 
-var app2 = express();
-app2.use(express.static("arTest"));
+//connect with handlebars
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
-var PORT = process.env.PORT || 4040;
+// Routes, names are place holders
+require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
-app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
-});
 
-app.get("/login", function (req, res) {
-  res.sendFile(path.join(__dirname, "login.html"));
-});
-
-app.get("/display", function (req, res) {
-  res.sendFile(path.join(__dirname, "results.html"));
-});
-
-app2.get("/AR", function (req, res) {
-  res.sendFile(path.join(__dirname, "arExample.html"));
-});
-
-app.listen(PORT, function () {
-  // Log (server-side) when our server has started
-  console.log("Server listening on: http://localhost:" + PORT);
+// Syncing our sequelize models and then starting our Express app
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
 });
