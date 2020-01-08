@@ -2,36 +2,18 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* scroll smoothly effect */
-html {
+/* scroll smoothly effect, not using for now */
+/* html {
   scroll-behavior: smooth;
-}
+} */
+
 /* Top Navbar --------------------------*/
-nav {
-  padding: 5px 10px !important;
-  border-bottom: 1px solid #ccc;
+#navbarHeader, .navbar{
+  background-color: #e16556 !important;
 }
-.navbar-brand {
-  color: #ec866f !important;
-}
-#project-name {
-  margin-bottom: 0;
-}
-.nav-item {
-  font-weight: bold;
-}
-.nav-link {
-  border-right: 1px solid #ec866f;
-  padding: 0 12px !important;
-}
-#last-nav {
-  border-right: 0;
-}
-.nav-scroll-bg {
-  background-color: white;
-}
-.active {
-  color: #ec866f !important;
+.navbar-toggler{
+  color: white;
+  border: none;
 }
 /* index.html css---------------------------------------------------- */
 #app-logo{
@@ -50,7 +32,7 @@ nav {
 #camera-button, #upload-button{
   color: white;
   background-color: #ec866f;
-  padding: 10px 20px;
+  padding: 10px 30px;
 }
 
 /* camera.html css --------------------------------------------*/
