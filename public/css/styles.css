@@ -81,12 +81,12 @@ nav {
 .camera-group{
   margin-top:50px;
 }
-#startbutton{
+#start-button{
   color: white;
   background-color: #ec866f;
   border: 0;
   padding: 10px 20px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .ingredient-row{
   margin-top: 30px;

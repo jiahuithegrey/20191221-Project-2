@@ -27,7 +27,7 @@
         video = document.getElementById('video');
         canvas = document.getElementById('canvas');
         photo = document.getElementById('photo');
-        startbutton = document.getElementById('startbutton');
+        startbutton = document.getElementById('start-button');
 
         navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: { exact: "environment" } } })
             .then(function (stream) {
