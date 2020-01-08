@@ -2,40 +2,25 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* scroll smoothly effect */
-html {
+/* scroll smoothly effect, not using for now */
+/* html {
   scroll-behavior: smooth;
-}
+} */
+
 /* Top Navbar --------------------------*/
-nav {
-  padding: 5px 10px !important;
-  border-bottom: 1px solid #ccc;
+#navbarHeader, .navbar{
+  background-color: #e16556 !important;
 }
-.navbar-brand {
-  color: #ec866f !important;
-}
-#project-name {
-  margin-bottom: 0;
-}
-.nav-item {
-  font-weight: bold;
-}
-.nav-link {
-  border-right: 1px solid #ec866f;
-  padding: 0 12px !important;
-}
-#last-nav {
-  border-right: 0;
-}
-.nav-scroll-bg {
-  background-color: white;
-}
-.active {
-  color: #ec866f !important;
+.navbar-toggler{
+  color: white;
+  border: none;
 }
 /* index.html css---------------------------------------------------- */
 #app-logo{
-  width: 20px;
+  width: 24px;
+}
+#app-name{
+  font-size: 24px;
 }
 .process{
   margin-top: 50px;
@@ -49,17 +34,17 @@ nav {
 }
 #camera-button, #upload-button{
   color: white;
-  background-color: #ec866f;
-  padding: 10px 20px;
+  background-color: #e16556;
+  padding: 10px 30px;
 }
 
 /* camera.html css --------------------------------------------*/
 #video {
-  border: 1px solid #ec866f;
+  border: 1px solid #e16556;
   height: 240px;
 }
 #photo {
-  border: 1px solid #ec866f;
+  border: 1px solid #e16556;
   height: 240px; 
 }
 #canvas {
@@ -89,20 +74,20 @@ nav {
 }
 #start-button{
   color: white;
-  background-color: #ec866f;
+  background-color: #e16556;
   padding: 10px 20px;
 }
 #ingredient-button {
   text-decoration: none;
   color: white;
-  background-color: #ec866f;
+  background-color: #e16556;
   padding: 10px 20px;
 }
 /* ingredient.html css--------------------------------------------*/
 #retake-button{
   display: block;
   color: white;
-  background-color: #ec866f;
+  background-color: #e16556;
   border: 0;
   width: 180px;
   padding: 10px 20px;
@@ -113,7 +98,7 @@ nav {
 }
 #recipe-button{
   color: white;
-  background-color: #ec866f;
+  background-color: #e16556;
   padding: 10px 20px;
 }
 
@@ -121,10 +106,11 @@ nav {
 
 /* Bottom Footer --------------------------------------------*/
 footer {
-  margin-top: 150px;
   position: absolute;
+  bottom: 0;
   width: 100%;
   height: 40px; /* Set the fixed height of the footer */
+  background-color: #e16556;
 }
 #copyright {
   font-size: 14px;
