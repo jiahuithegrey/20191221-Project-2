@@ -97,7 +97,19 @@ nav {
   background-color: #ec866f;
   padding: 13px 25px;
 }
-
+/* Ingredient Page --------------------------------------------*/
+#retake-button{
+  display: block;
+  color: white;
+  background-color: #ec866f;
+  border: 0;
+  width: 180px;
+  padding: 10px 20px;
+  margin-top: 30px;
+}
+.main{
+  margin-top:40px;
+}
 /* Bottom Footer --------------------------------------------*/
 footer {
   margin-top: 150px;
@@ -109,5 +121,5 @@ footer {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 0;
-  height: 40px;
+  height: 50px;
 }
