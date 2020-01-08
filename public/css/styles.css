@@ -17,7 +17,10 @@
 }
 /* index.html css---------------------------------------------------- */
 #app-logo{
-  width: 20px;
+  width: 28px;
+}
+#app-name{
+  font-size: 28px;
 }
 .process{
   margin-top: 50px;
