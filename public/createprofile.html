@@ -59,25 +59,30 @@
         </div>
     </header>
 
-    <div class="process">
-        <div class="text-center">
-            <a href="https://docs.clarifai.com/" target="_blank">
-                <img id="process-diagram" src="img/process.png" alt="process-diagram"></a>
-            <h8 class="text-muted" id="process-title">From Clarifai Guide</h8>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h2>Sign Up Form</h2>
+            <form class="signup">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email-input" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="password-input" placeholder="Password">
+              </div>
+              <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span> <span class="msg"></span>
+              </div>
+              <button type="submit" class="btn btn-default">Sign Up</button>
+            </form>
+            <br />
+            <p>Or log in <a href="/login">here</a></p>
+          </div>
         </div>
-    </div>
-    
-    <div class="container button-group">
-        <div class="row justify-content-around">
-            <div class="col-sm-12 col-md-6 text-center">       
-                <a href="camera.html" id="camera-button" role="button">Snap a photo!</a>  
-            </div>
-            <div class="col-sm-1 col-md-6 text-center">  
-            <a href="upload.html" id="upload-button" role="button">Upload a pic!</a>              
-            </div>
-        </div>
-    </div>
-
+      </div>
 
     <script src="script.js"></script>
 
