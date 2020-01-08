@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <!-- jquery CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!-- Bootstrap Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Bootstrap compiled and minified CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-    
-    <!-- Favicon and CSS -->
-    <link rel="shortcut icon" type="image/png" href="./img/food.png" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- jquery CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Bootstrap Latest compiled and minified JavaScript -->
+        <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <!-- Bootstrap compiled and minified CSS -->
+        <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <title>MySmartRecipe</title>
-</head>
+        <!-- Favicon and CSS -->
+        <link rel="shortcut icon" type="image/png" href="./img/food.png" />
+        <link rel="stylesheet" href="./css/styles.css" />
+    
+        <title>MySmartRecipe</title>
+    </head>
  
 <body>
     <header>
@@ -33,14 +33,14 @@
             <div class="row">
               <div class="col-sm-8 col-md-7 py-4">
                 <h4 class="text-white">About</h4>
-                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                <p class="text-white">MySmartRecipe is based on food photo recognition to get probable ingredients, then recommend recipes of the ingredients user picks.</p>
               </div>
               <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Contact</h4>
+                <h4 class="text-white">Introduction</h4>
                 <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                  <li><a href="#" class="text-white">Like on Facebook</a></li>
-                  <li><a href="#" class="text-white">Email me</a></li>
+                  <li><a href="#" class="text-white">Team</a></li>
+                  <li><a href="#" class="text-white">Technology</a></li>
+                  <li><a href="#" class="text-white">Documentation</a></li>
                 </ul>
               </div>
             </div>
@@ -52,7 +52,6 @@
                 <img id="app-logo" src="img/food.png">
                 <strong>&nbspMySmartRecipe</strong>
             </a>
-            <!-- how to make toggle work? -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -62,18 +61,18 @@
 
     <div class="process">
         <div class="text-center">
-            <a href="https://docs.clarifai.com/">
+            <a href="https://docs.clarifai.com/" target="_blank">
                 <img id="process-diagram" src="img/process.png" alt="process-diagram"></a>
             <h8 class="text-muted" id="process-title">From Clarifai Guide</h8>
         </div>
     </div>
     
-    <div class="container">
-        <div class="row justify-content-around button-group">
-            <div class="col-sm-12 col-md-4 text-center">       
+    <div class="container button-group">
+        <div class="row justify-content-around">
+            <div class="col-sm-12 col-md-6 text-center">       
                 <a href="camera.html" id="camera-button" role="button">Snap a photo!</a>  
             </div>
-            <div class="col-sm-1 col-md-4 text-center">  
+            <div class="col-sm-1 col-md-6 text-center">  
             <a href="upload.html" id="upload-button" role="button">Upload a pic!</a>              
             </div>
         </div>

@@ -33,7 +33,7 @@ nav {
 .active {
   color: #ec866f !important;
 }
-/* index css---------------------------------------------------- */
+/* index.html css---------------------------------------------------- */
 #app-logo{
   width: 20px;
 }
@@ -53,7 +53,7 @@ nav {
   padding: 10px 20px;
 }
 
-/* camera css --------------------------------------------*/
+/* camera.html css --------------------------------------------*/
 #video {
   border: 1px solid #ec866f;
   height: 240px;
@@ -81,23 +81,24 @@ nav {
 .camera-group{
   margin-top:50px;
 }
+.button-group{
+  margin-top: 30px;
+}
+.second-button{
+  margin-top: 30px;
+}
 #start-button{
   color: white;
   background-color: #ec866f;
-  border: 0;
   padding: 10px 20px;
-  margin-top: 60px;
-}
-.ingredient-row{
-  margin-top: 30px;
 }
 #ingredient-button {
   text-decoration: none;
   color: white;
   background-color: #ec866f;
-  padding: 13px 25px;
+  padding: 10px 20px;
 }
-/* Ingredient Page --------------------------------------------*/
+/* ingredient.html css--------------------------------------------*/
 #retake-button{
   display: block;
   color: white;

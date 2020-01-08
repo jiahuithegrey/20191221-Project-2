@@ -18,7 +18,7 @@
         <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <!-- Bootstrap compiled and minified CSS -->
         <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
         <!-- Favicon and CSS -->
         <link rel="shortcut icon" type="image/png" href="./img/food.png" />
         <link rel="stylesheet" href="./css/styles.css" />
@@ -59,25 +59,27 @@
         </div>
     </header>
 
-      <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>Selected Ingredients:</h4>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>Recipes:</h4>
+    <h3 class="text-center">Would you like to create a profile?</h3>
+
+    <div class="container button-group">
+        <div class="row justify-content-around">
+            <div class="col-sm-12 col-md-6 text-center">       
+                <a href="createprofile.html" id="create-profile-btn" role="button">Create A Profile</a>  
+            </div>
+            <div class="col-sm-1 col-md-6 text-center">  
+            <a id="no-profile-btn" role="button">No I'm good</a>              
             </div>
         </div>
     </div>
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
-<footer class="bg-dark text-center text-muted">
-    <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
-</footer>
+    <!-- sticky footer? -->
+    <footer class="bg-dark text-center text-muted">
+        <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
+    </footer>
+
 </body>
 </html>

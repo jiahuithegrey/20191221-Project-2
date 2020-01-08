@@ -18,7 +18,7 @@
         <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <!-- Bootstrap compiled and minified CSS -->
         <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
         <!-- Favicon and CSS -->
         <link rel="shortcut icon" type="image/png" href="./img/food.png" />
         <link rel="stylesheet" href="./css/styles.css" />
@@ -59,25 +59,37 @@
         </div>
     </header>
 
-      <div class="container">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>Selected Ingredients:</h4>
-            </div>
+          <div class="col-md-6 col-md-offset-3">
+            <h2>Sign Up Form</h2>
+            <form class="signup">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email-input" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="password-input" placeholder="Password">
+              </div>
+              <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span> <span class="msg"></span>
+              </div>
+              <button type="submit" class="btn btn-default">Sign Up</button>
+            </form>
+            <br />
+            <p>Or log in <a href="/login">here</a></p>
+          </div>
         </div>
+      </div>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>Recipes:</h4>
-            </div>
-        </div>
-    </div>
+    <script src="script.js"></script>
 
+    <!-- sticky footer? -->
+    <footer class="bg-dark text-center text-muted">
+        <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
+    </footer>
 
-<script src="script.js"></script>
-
-<footer class="bg-dark text-center text-muted">
-    <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
-</footer>
 </body>
 </html>
