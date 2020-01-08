@@ -84,6 +84,9 @@ nav {
 .button-group{
   margin-top: 30px;
 }
+.second-button{
+  margin-top: 30px;
+}
 #start-button{
   color: white;
   background-color: #ec866f;
