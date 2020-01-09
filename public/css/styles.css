@@ -15,6 +15,11 @@
   color: white;
   border: none;
 }
+a.button:hover{
+  text-decoration: none;
+  color: #e16556 !important;
+  background-color: #a9d7cc !important;
+}
 /* index.html css---------------------------------------------------- */
 #app-logo{
   width: 28px;
@@ -48,15 +53,10 @@
   padding: 15px 100px;
   width: 100%;
 }
-a.button:hover{
-  text-decoration: none;
-  color: #e16556 !important;
-  background-color: #a9d7cc !important;
-}
 
 /* camera.html css --------------------------------------------*/
 .photo{
-  margin-top: 40px;
+  margin-top: 50px;
 }
 #video {
   border: 1px solid #e16556;
@@ -107,7 +107,7 @@ a.button:hover{
 .main{
   margin-top:40px;
 }
-.photo-frame{
+.photo-col{
   background-color: #a9d7cc;
   padding: 0;
 }
@@ -124,7 +124,13 @@ a.button:hover{
   font-weight: bold;
   color: #e16556;
   border: 1px solid #e16556;
-  /* padding: 10px 20px; */
+  padding: 3px 7px;
+  margin: 0 auto 40px auto;
+}
+#retake-button:hover{
+  text-decoration: none;
+  color: white !important;
+  background-color: #e16556 !important;
 }
 .table-col{
   padding-left: 50px;
@@ -139,8 +145,6 @@ th,td,tr{
   background-color: #e16556;
   padding: 10px 20px;
 }
-
-
 
 /* Bottom Footer --------------------------------------------*/
 footer {
