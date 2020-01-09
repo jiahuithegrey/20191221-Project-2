@@ -22,22 +22,30 @@
 #app-name{
   font-size: 24px;
 }
-.process{
-  margin-top: 50px;
+.process, .start{
+  margin-top: 40px;
+}
+#process-diagram{
+  width: 100%;
 }
 #process-title{
-  display: block;
-  margin-top: 20px;
+  font-size: 20px;
 }
-.button-group{
+#process-subtitle{
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+}
+.two-buttons{
   margin-top: 50px;
 }
 #camera-button, #upload-button{
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   color: white;
   background-color: #e16556;
-  padding: 15px 40px;
+  padding: 15px 120px;
+  width: 100%;
 }
 
 /* camera.html css --------------------------------------------*/
