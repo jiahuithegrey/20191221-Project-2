@@ -20,6 +20,7 @@ a.button:hover{
   color: #e16556 !important;
   background-color: #a9d7cc !important;
 }
+
 /* index.html css---------------------------------------------------- */
 #app-logo{
   width: 28px;
@@ -42,18 +43,23 @@ a.button:hover{
   display: block;
   margin-top: 10px;
 }
+#start-title{
+  margin: 0 auto 20px auto;
+}
 .two-buttons{
   margin-top: 50px;
 }
 #camera-button, #upload-button{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   background-color: #e16556;
-  padding: 15px 100px;
+  padding: 10px 40px;
   width: 100%;
 }
-
+.or, .row-1, .row-2{
+  border: 1px black solid;
+}
 /* camera.html css --------------------------------------------*/
 .photo{
   margin-top: 50px;
@@ -159,4 +165,26 @@ footer {
   margin-top: 10px;
   margin-bottom: 0;
   height: 50px;
+}
+
+/* Media Query --------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #camera-button, #upload-button{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+  }
+  .row-1, .row-2{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #start-title{
+    font-size: 18px;
+  }
+  #or{
+    font-size: 14px;
+    margin: 8px auto;
+  }
 }
