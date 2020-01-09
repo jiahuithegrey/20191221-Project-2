@@ -11,7 +11,7 @@
                 <ul class="list-unstyled">
                   <li><a href="#" class="text-white">Team</a></li>
                   <li><a href="#" class="text-white">Technology</a></li>
-                  <li><a href="https://github.com/jiahuithegrey/20191221-Project-2" target="_blank" class="text-white">Codebase</a></li>
+                  <li><a href="#" class="text-white">Documentation</a></li>
                 </ul>
               </div>
             </div>
@@ -30,29 +30,44 @@
         </div>
     </header>
 
-    <div class="process">
-        <div class="text-center">
-            <a href="https://docs.clarifai.com/" target="_blank">
-                <img id="process-diagram" src="img/process.png" alt="process-diagram"></a>
-            <h8 class="text-muted" id="process-title">From Clarifai Guide</h8>
+      <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <h4>Selected Ingredients:</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <h4>Recipes:</h4>
+                {{!-- put recipe cards here --}}
+                {{#each recipes}}
+                <div>
+                    {{this}}
+                </div>
+                {{/each}}
+            </div>
         </div>
     </div>
-    
+
+
+
+    <!-- prompt to create profile -->
+    <h3 class="text-center">Would you like to create a profile?</h3>
     <div class="container button-group">
         <div class="row justify-content-around">
             <div class="col-sm-12 col-md-6 text-center">       
-                <a href="camera.html" id="camera-button" role="button">Snap a photo!</a>  
+                <a href="createprofile.html" id="create-profile-btn" role="button">Create A Profile</a>  
             </div>
-            <div class="col-sm-12 col-md-6 text-center">  
-            <a href="upload.html" id="upload-button" role="button">Upload a pic!</a>              
+            <div class="col-sm-1 col-md-6 text-center">  
+            <a id="no-profile-btn" role="button">No I'm good</a>              
             </div>
         </div>
     </div>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
-    <!-- sticky footer? -->
-    <footer class="text-center text-light">
-        <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
-    </footer>
+<footer class="text-center text-light">
+    <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
+</footer>
