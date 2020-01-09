@@ -17,28 +17,47 @@
 }
 /* index.html css---------------------------------------------------- */
 #app-logo{
-  width: 24px;
+  width: 28px;
 }
 #app-name{
   font-size: 24px;
 }
-.process{
-  margin-top: 50px;
+.process, .start{
+  margin-top: 40px;
+}
+#process-diagram{
+  width: 90%;
 }
 #process-title{
-  display: block;
-  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 5%;
 }
-.button-group{
+#process-subtitle{
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+}
+.two-buttons{
   margin-top: 50px;
 }
 #camera-button, #upload-button{
+  font-size: 24px;
+  font-weight: bold;
   color: white;
   background-color: #e16556;
-  padding: 10px 30px;
+  padding: 15px 100px;
+  width: 100%;
+}
+a.button:hover{
+  text-decoration: none;
+  color: #e16556 !important;
+  background-color: #a9d7cc !important;
 }
 
 /* camera.html css --------------------------------------------*/
+.photo{
+  margin-top: 40px;
+}
 #video {
   border: 1px solid #e16556;
   height: 240px;
@@ -54,34 +73,36 @@
   display: inline-block;
 }
 .output {
-  /* width: 340px; */
   display: inline-block;
 }
-/* what's this? */
-.contentarea { 
+/* .contentarea { 
   font-size: 16px;
   font-family: "Lucida Grande", "Arial", sans-serif;
-  /* width: 760px; */
-}
+} */
 .camera-group{
   margin-top:50px;
 }
 .button-group{
-  margin-top: 30px;
+  margin-top: 60px;
 }
 .second-button{
   margin-top: 30px;
 }
 #start-button{
+  font-size: 18px;
+  font-weight: bold;
   color: white;
   background-color: #e16556;
   padding: 10px 20px;
+  width: 100%;
 }
-#ingredient-button {
-  text-decoration: none;
+#ingredient-button{
+  font-size: 18px;
+  font-weight: bold;
   color: white;
   background-color: #e16556;
   padding: 10px 20px;
+  width: 100%;
 }
 /* ingredient.html css--------------------------------------------*/
 #retake-button{
@@ -90,8 +111,9 @@
   background-color: #e16556;
   border: 0;
   width: 180px;
-  padding: 10px 20px;
   margin-top: 30px;
+  padding: 10px auto;
+  min-width: 300px;
 }
 .main{
   margin-top:40px;

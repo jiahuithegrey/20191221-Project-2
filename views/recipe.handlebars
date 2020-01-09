@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <h4>Selected Ingredients:</h4>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <h4>Recipes:</h4>
+            {{!-- put recipe cards here --}}
+            {{#each recipes}}
+            <div>
+                {{this}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<!-- prompt to create profile -->
+<h3 class="text-center">Would you like to create a profile?</h3>
+<div class="container button-group">
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-6 text-center">
+            <a href="/createprofile" id="create-profile-btn" role="button">Create A Profile</a>
+        </div>
+        <div class="col-sm-1 col-md-6 text-center">
+            <a id="no-profile-btn" role="button">No I'm good</a>
+        </div>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+<footer class="text-center text-light">
+    <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
+</footer>
