@@ -19,7 +19,7 @@
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex justify-content-between">
-            <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <a href="/" class="navbar-brand d-flex align-items-center">
                 <img id="app-logo" src="img/applogo.png">
                 <strong id="app-name">&nbspMySmartRecipe</strong>
             </a>
@@ -30,6 +30,7 @@
         </div>
     </header>
 
+    {{!-- process diagrams --}}
     <div class="process">
         <div class="text-center">
             <a href="https://docs.clarifai.com/" target="_blank">
@@ -37,14 +38,15 @@
             <h8 class="text-muted" id="process-title">From Clarifai Guide</h8>
         </div>
     </div>
-    
+
+    {{!-- two buttons --}}
     <div class="container button-group">
         <div class="row justify-content-around">
             <div class="col-sm-12 col-md-6 text-center">       
-                <a href="camera.html" id="camera-button" role="button">Snap a photo!</a>  
+                <a href="/camera" id="camera-button" role="button">Snap a photo!</a>  
             </div>
             <div class="col-sm-12 col-md-6 text-center">  
-            <a href="upload.html" id="upload-button" role="button">Upload a pic!</a>              
+            <a href="/upload" id="upload-button" role="button">Upload a pic!</a>              
             </div>
         </div>
     </div>
