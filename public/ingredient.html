@@ -60,48 +60,56 @@
     </header>
 
     <div class="container main">
-        <div class="row">
-            <div class="col-sm-12 col-md-8 photo-frame text-center">
-              <!-- placeholder photo -->
-              <img id="photo-captured" src="img/foodplaceholder.jpeg">
-          
-              <a href="camera.html" class="text-center" id="retake-button" role="button">Retake photo</a> 
-              <!-- <button id="retake-button">Retake the photo</button> -->
+        <div class="row big-row">
+            <div class="col-sm-12 col-md-8 text-center photo-frame ">
+
+              <div class="row photo-row">
+                <!-- placeholder photo -->
+                <img id="photo-captured" src="img/foodplaceholder.jpeg">
+              </div>
+              <div class="row">
+                <a href="camera.html" id="retake-button" role="button">Retake photo</a>
+              </div>
             </div>
 
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4 table-col">
+              <div class="row">
                 <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">PREDICTED INGREDIENT</th>
-                        <th scope="col">PROBABILITY</th>
-                        <th scope="col">SELECTION</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>syrup</td>
-                        <td>98.8%</td>
-                        <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
-                      </tr>
-                      <tr>
-                        <td>waffle</td>
-                        <td>98.0%</td>
-                        <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
-                      </tr>
-                      <tr>
-                        <td>french toast</td>
-                        <td>95.7%</td>
-                        <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
-                      </tr>
-                      <tr>
-                        <td>coffee</td>
-                        <td>93.4%</td>
-                        <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <a href="recipe.html" class="button" id="recipe-button" role="button">Find Recipes!</a> 
+                  <thead>
+                    <tr>
+                      <th scope="col">PREDICTED INGREDIENT</th>
+                      <th scope="col">PROBABILITY</th>
+                      <th scope="col">SELECTION</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>syrup</td>
+                      <td>98.8%</td>
+                      <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>waffle</td>
+                      <td>98.0%</td>
+                      <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>french toast</td>
+                      <td>95.7%</td>
+                      <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
+                    </tr>
+                    <tr>
+                      <td>coffee</td>
+                      <td>93.4%</td>
+                      <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="row">
+                <a href="recipe.html" class="button" id="recipe-button" role="button">Find Recipes!</a> 
+              </div>    
             </div>
         </div>
     </div>

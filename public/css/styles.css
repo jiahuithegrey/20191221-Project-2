@@ -102,10 +102,19 @@ a.button:hover{
   background-color: #e16556;
   padding: 10px 20px;
 }
+
 /* ingredient.html css--------------------------------------------*/
+.main{
+  margin-top:40px;
+}
 .photo-frame{
   background-color: #a9d7cc;
+  padding: 0;
 }
+/* .photo-row{
+  margin-left: 0;
+  margin-right: 0;
+} */
 #photo-captured{
   margin: 20px auto 40px auto;
 }
@@ -115,12 +124,13 @@ a.button:hover{
   font-weight: bold;
   color: #e16556;
   border: 1px solid #e16556;
-  padding: 10px auto;
-  width: 200px;
-
+  /* padding: 10px 20px; */
 }
-.main{
-  margin-top:40px;
+.table-col{
+  padding-left: 50px;
+}
+th,td,tr{
+  padding-left: 0 !important;
 }
 #recipe-button{
   font-size: 18px;
