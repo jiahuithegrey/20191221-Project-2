@@ -26,10 +26,11 @@
   margin-top: 40px;
 }
 #process-diagram{
-  width: 100%;
+  width: 90%;
 }
 #process-title{
   font-size: 20px;
+  margin-left: 5%;
 }
 #process-subtitle{
   font-size: 12px;
@@ -44,8 +45,13 @@
   font-weight: bold;
   color: white;
   background-color: #e16556;
-  padding: 15px 120px;
+  padding: 15px 100px;
   width: 100%;
+}
+a.button:hover{
+  text-decoration: none;
+  color: #e16556 !important;
+  background-color: #a9d7cc !important;
 }
 
 /* camera.html css --------------------------------------------*/
