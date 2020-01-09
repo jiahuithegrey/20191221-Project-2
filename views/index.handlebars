@@ -1,60 +1,28 @@
-<header>
-        <div class="collapse bg-dark" id="navbarHeader">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">About</h4>
-                <p class="text-white">MySmartRecipe is based on food photo recognition to get probable ingredients, then recommend recipes of the ingredients user picks.</p>
-              </div>
-              <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Introduction</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Team</a></li>
-                  <li><a href="#" class="text-white">Technology</a></li>
-                  <li><a href="https://github.com/jiahuithegrey/20191221-Project-2" target="_blank" class="text-white">Codebase</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-between">
-            <a href="/" class="navbar-brand d-flex align-items-center">
-                <img id="app-logo" src="img/applogo.png">
-                <strong id="app-name">&nbspMySmartRecipe</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            </div>
-        </div>
-    </header>
+{{!-- process diagrams --}}
+<div class="process">
+  <div class="text-center">
+    <a href="https://docs.clarifai.com/" target="_blank">
+      <img id="process-diagram" src="img/process.png" alt="process-diagram"></a>
+    <h8 class="text-muted" id="process-title">From Clarifai Guide</h8>
+  </div>
+</div>
 
-    {{!-- process diagrams --}}
-    <div class="process">
-        <div class="text-center">
-            <a href="https://docs.clarifai.com/" target="_blank">
-                <img id="process-diagram" src="img/process.png" alt="process-diagram"></a>
-            <h8 class="text-muted" id="process-title">From Clarifai Guide</h8>
-        </div>
+{{!-- two buttons --}}
+<div class="container button-group">
+  <div class="row justify-content-around">
+    <div class="col-sm-12 col-md-6 text-center">
+      <a href="/camera" id="camera-button" role="button">Snap a photo!</a>
     </div>
-
-    {{!-- two buttons --}}
-    <div class="container button-group">
-        <div class="row justify-content-around">
-            <div class="col-sm-12 col-md-6 text-center">       
-                <a href="/camera" id="camera-button" role="button">Snap a photo!</a>  
-            </div>
-            <div class="col-sm-12 col-md-6 text-center">  
-            <a href="/upload" id="upload-button" role="button">Upload a pic!</a>              
-            </div>
-        </div>
+    <div class="col-sm-12 col-md-6 text-center">
+      <a href="/upload" id="upload-button" role="button">Upload a pic!</a>
     </div>
+  </div>
+</div>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
-    <!-- sticky footer? -->
-    <footer class="text-center text-light">
-        <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
-    </footer>
+<!-- sticky footer? -->
+<footer class="text-center text-light">
+  <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
+</footer>

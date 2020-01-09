@@ -1,69 +1,35 @@
-<header>
-        <div class="collapse bg-dark" id="navbarHeader">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 col-md-7 py-4">
-                <h4 class="text-white">About</h4>
-                <p class="text-white">MySmartRecipe is based on food photo recognition to get probable ingredients, then recommend recipes of the ingredients user picks.</p>
-              </div>
-              <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Introduction</h4>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Team</a></li>
-                  <li><a href="#" class="text-white">Technology</a></li>
-                  <li><a href="#" class="text-white">Documentation</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container d-flex justify-content-between">
-            <a href="/" class="navbar-brand d-flex align-items-center">
-                <img id="app-logo" src="img/applogo.png">
-                <strong id="app-name">&nbspMySmartRecipe</strong>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            </div>
-        </div>
-    </header>
-
-      <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <h4>Selected Ingredients:</h4>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <h4>Recipes:</h4>
-                {{!-- put recipe cards here --}}
-                {{#each recipes}}
-                <div>
-                    {{this}}
-                </div>
-                {{/each}}
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <h4>Selected Ingredients:</h4>
         </div>
     </div>
 
-
-
-    <!-- prompt to create profile -->
-    <h3 class="text-center">Would you like to create a profile?</h3>
-    <div class="container button-group">
-        <div class="row justify-content-around">
-            <div class="col-sm-12 col-md-6 text-center">       
-                <a href="/createprofile" id="create-profile-btn" role="button">Create A Profile</a>  
+    <div class="row">
+        <div class="col-sm-12 col-md-4">
+            <h4>Recipes:</h4>
+            {{!-- put recipe cards here --}}
+            {{#each recipes}}
+            <div>
+                {{this}}
             </div>
-            <div class="col-sm-1 col-md-6 text-center">  
-            <a id="no-profile-btn" role="button">No I'm good</a>              
-            </div>
+            {{/each}}
         </div>
     </div>
+</div>
+
+<!-- prompt to create profile -->
+<h3 class="text-center">Would you like to create a profile?</h3>
+<div class="container button-group">
+    <div class="row justify-content-around">
+        <div class="col-sm-12 col-md-6 text-center">
+            <a href="/createprofile" id="create-profile-btn" role="button">Create A Profile</a>
+        </div>
+        <div class="col-sm-1 col-md-6 text-center">
+            <a id="no-profile-btn" role="button">No I'm good</a>
+        </div>
+    </div>
+</div>
 
 
 <script src="script.js"></script>
