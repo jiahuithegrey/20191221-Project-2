@@ -61,12 +61,15 @@
 
     <div class="container main">
         <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <img id="photo" alt="The screen capture will appear in this box.">
-                <a href="camera.html" id="retake-button" role="button">Retake the photo</a> 
-                <!-- <button id="retake-button">Retake the photo</button> -->
+            <div class="col-sm-12 col-md-8 photo-frame text-center">
+              <!-- placeholder photo -->
+              <img id="photo-captured" src="img/foodplaceholder.jpeg">
+          
+              <a href="camera.html" class="text-center" id="retake-button" role="button">Retake photo</a> 
+              <!-- <button id="retake-button">Retake the photo</button> -->
             </div>
-            <div class="col-sm-12 col-md-6">
+
+            <div class="col-sm-12 col-md-4">
                 <table class="table table-hover">
                     <thead>
                       <tr>
@@ -98,7 +101,7 @@
                       </tr>
                     </tbody>
                   </table>
-                  <a href="recipe.html" id="recipe-button" role="button">Find Recipes!</a> 
+                  <a href="recipe.html" class="button" id="recipe-button" role="button">Find Recipes!</a> 
             </div>
         </div>
     </div>
