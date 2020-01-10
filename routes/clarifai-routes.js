@@ -9,15 +9,23 @@ const clariApp = new Clarifai.App({ apiKey: clarifaiAPI });
 module.exports = function(app) {
   // Predict the contents of an image by passing in a URL.
   app.get("/clarifai/food", function(req, res) {
-    const imgUrl = req.body.img;
+    //const imgUrl = req.body.img;
 
+    //localstorage get
+    var dataImage = localStorage.getItem("bufferImage");
+    imgUrl = "data:image/png" + dataImage;
+
+    //api call
     clariApp.models
       .predict("bd367be194cf45149e75f01d59f77ba7", imgUrl, { minValue: 0.6 })
       .then(response => {
         let predictions = [];
-        response.outputs[0].data.concepts.forEach(pred =>
-          predictions.push(pred.name)
-        );
+        response.outputs[0].data.concepts.forEach(pred => {
+          let entry = {};
+          entry.name = pred.name;
+          entry.prob = Math.round(pred.value * 1000) / 10; // Converted to percentage.
+          predictions.push(entry);
+        });
         res.json(predictions);
       })
       .catch(err => {
