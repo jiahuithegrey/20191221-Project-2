@@ -1,6 +1,7 @@
 //Possibly Change this to sequelize
 var express = require("express");
 var exphbs = require("express-handlebars");
+// const myParser = require("body-parser");
 
 // Sets up the Express App
 var app = express();
@@ -10,9 +11,13 @@ var PORT = process.env.PORT || 8080;
 var db = require("./models");
 
 // Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+// app.use(express.urlencoded({ extended: true }));
+// app.use(express.json());
+app.use(express.urlencoded({ limit: "2mb", extended: true }));
+app.use(express.json({ limit: "2mb" }));
 
+// app.use(myParser.json({limit: '200mb'}));
+// app.use(myParser.urlencoded({limit: '200mb', extended: true}));
 // Static directory
 app.use(express.static("public"));
 
