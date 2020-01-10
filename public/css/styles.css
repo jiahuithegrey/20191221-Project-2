@@ -188,7 +188,7 @@ th,td,tr{
 }
 
 /* createprofile.html css --------------------------------------------*/
-#sign-up-btn{
+#sign-up-btn, #login-btn{
   font-size: 16px;
   font-weight: bold;
   color: white;

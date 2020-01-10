@@ -17,9 +17,12 @@ module.exports = function(app) {
       .predict("bd367be194cf45149e75f01d59f77ba7", imgUrl, { minValue: 0.6 })
       .then(response => {
         let predictions = [];
-        response.outputs[0].data.concepts.forEach(pred =>
-          predictions.push(pred.name)
-        );
+        response.outputs[0].data.concepts.forEach(pred => {
+          let entry = {};
+          entry.name = pred.name;
+          entry.prob = Math.round(pred.value * 1000) / 10; // Converted to percentage.
+          predictions.push(entry);
+        });
         res.json(predictions);
       })
       .catch(err => {
