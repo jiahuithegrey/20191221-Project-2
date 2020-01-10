@@ -22,6 +22,10 @@ module.exports = function(app) {
         res.render("createprofile");
     }); 
 
+    app.get("/signin", function(req, res) {
+        res.render("signin");
+    }); 
+
 //     app.get("/upload", function(req, res) {
 //         res.render("upload");
 //     });
