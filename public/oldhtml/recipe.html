@@ -18,7 +18,7 @@
         <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <!-- Bootstrap compiled and minified CSS -->
         <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
         <!-- Favicon and CSS -->
         <link rel="shortcut icon" type="image/png" href="./img/food.png" />
         <link rel="stylesheet" href="./css/styles.css" />
@@ -58,51 +58,42 @@
             </div>
         </div>
     </header>
-
-    <div class="container photo">
-        <div class="row justify-content-around">
-            <div class="col-sm-12 col-md-6 text-center">
-                <div class="camera">
-                    <video id="video">Video stream not available.</video>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-6 text-center">
-                <canvas id="canvas">
-                </canvas>
-                <div class="output">
-                    <img id="photo" alt="The screen capture will appear in this box.">
-                </div>
-            </div>  
-        </div>
-    </div>
-
-    <!-- two buttons -->
-    <div class="container button-group">
-        <div class="row justify-content-around">
-            <div class="col-sm-12 col-md-8 text-center">
-                <a class="button" id="start-button" role="button">Snap a photo of your food!</a>
+    
+    <!-- Ingredients picked-->
+      <div class="container main">
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <h4>Selected Ingredients:</h4>
             </div>
         </div>
-        <div class="row justify-content-around second-button">
-            <div class="col-sm-12 col-md-8 text-center">
-                <a href="ingredient.html" class="button" id="ingredient-button" role="button">See Possible Ingredients</a>  
-            </div>    
+    <!-- Recipes cards -->
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <h4>Recipes:</h4>
+            </div>
         </div>
     </div>
-    
 
-
-    <div class="ingredients">
-
+    <!-- prompt to create profile -->
+    <div class="container two-buttons">
+        <div class="row">
+            <h5 id="start-profile">Would you like to create a profile?</h5>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 text-center">       
+                <a class="button" href="createprofile.html" id="create-profile-btn" role="button">Create A Profile</a>  
+            </div>
+            
+            <div class="col-sm-12 col-md-6 text-center">  
+                <a class="button" href="index.html" id="no-profile-btn" role="button">No I'm good</a>              
+            </div> 
+        </div> 
     </div>
-    
-    <script src="script.js"></script>
 
-    <script src="./js/cameraOp.js"></script>
-    <script src="./js/frontend.js"></script>
+<script src="script.js"></script>
 
-    <footer class="text-center text-light">
-        <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
-    </footer>
+<footer class="text-center text-light">
+    <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
+</footer>
 </body>
 </html>
