@@ -11,7 +11,11 @@ module.exports = function(app) {
     }); 
     
     app.get("/ingredient", function(req, res) {
+<<<<<<< HEAD
+        res.sendFile(path.join(__dirname, "../public/ingredient.html"));
+=======
         res.render("ingredient");
+>>>>>>> origin/master
     }); 
 
     app.get("/recipe", function(req, res) {
