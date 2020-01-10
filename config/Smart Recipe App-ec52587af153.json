@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "smart-recipe-app",
+  "private_key_id": "ec52587af1533ef1f96fdb4cfd9f7deb5c5c73c7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDTfjPhFipyKiVW\nKUZUOItR6CSF3/gfT65k7RVYUqUn1cS9XbQt4wxY1QVVl9/EXfnerBLITBSfPvBG\nbinvuVG+SshFq/0mYddC9m/xG7MQeiOu+7WBCLr0a/915sR9tsM1kfpV0qNxTLxN\nLunrl8UgGagobYjGYs/lOA4WtHhZtQP2ONVr+cmwY4wn/Q87fF/OtUM3RDCu15Wj\n0dmCn2JP4fWWZNiv3IabTsQ7mN7TZjbESXYHvwMWRlMBPRj0NqGd05S/jcNSpKWo\nku+caaioCiqVqrZfiuKKv3UHVR1gng/nINgl5yY4s2YfftnhK5BzJ2ZrPQkTzZv8\n2DoLGpPBAgMBAAECggEAVVY7ALu87MvsvNNyuVEHhkkxU4OHzrqMF9VCI51VXrl2\n5SIGLe3LcZyixmK9u7JfvGWaPo/UUl1G/mQ9L6mLPklWfiZjwzT/ctmVWahfnGps\nM5MFLcekCDP7pEs1RbSVF+yLIk4X/QOFh29Cm/llZQp1O7rW0ZXVZRw1Mxwm46rW\n2Y9isnYLpK2qidYfkzYttPL0cERzFn6J0GgXmc9oHQdGBxuU2+rl1XEdgf6cyDzW\ndKKQVwGJmPKzIlJbCmftHwelV18vWi8QE22n+bm0Xzqhf+Tk7TXgrb/3Hm6XHcBT\nYbEyQCOYi8Q1/KWolPTNunhS2xpKhHgmNlkd0WW08QKBgQDtYzEHcNrGANtXAOEg\nZUAOUEhkK72sMzHOOxgpwYcmF63t2Mg914Nd7iwFnm/pU8VArpWpmNG76rmO68tk\n9VqqPrAr41/1BxuJb1r5Jvzx66PrBX4EC9K2qR5VA667Tlhkt9owD7ZHf3ArjEz+\niBxAM1hzLpDQJ2yriugcSH70WwKBgQDkE0KzSF31Sv5cMNJ/9YHRXeQqGS+q1E7r\nZK399P5Zc5JyZoHi1i6fq3sVK0/tLyVed/jpCN9owgagpFuKSHt46Uu3ji9d+++M\n4mJU8xq3WLJLO7IhGBjYZb9IOX9fqs8MUm5jJW4VwXbyO0HqRRCueF0DY+NtGH9Z\njgTU5bIjEwKBgQC1xMwYDHwYPTO2jP/VFHJWA3dK7ItRvemXJny8DGn16w/NHb9G\nSy1V0Td4HfdHTFOv0X7b3B5Mq9Dl9PtLFOwVi+bN1E73ije1psScHxR0EaD0JsJ1\nSrBQGXMWWbmDxtu8U2MIhh9m49f6IHYcOBCZwDcsCy3rlSSKvdQ5Q/GiHQKBgFn9\nB3o5eWkJF+dEFCoMshXrl9TMbzRV5HWYGdZzzc95fDTLIUBhBbBWNpAZsMWCrpnh\neEJqD8wDkh3b+4pKIv2H/yoDXckVWGUcBXRDHy1sP5zThurr2RG4w4o5tXoHqP3R\noGBaKl9HIClfHBjU+0n7j6eAyAEJg2XQVTOzFWAlAoGBALVfmi73SVEKSAgIgjYH\nAJQ9Nn4sWtSPPA92i84OquL/TI9OvQQlQAy6LNccOm28RrK129TL8QfERwajGwX+\n5PFffkQ/9SzxrQAZbyiSKOsq7bEVx9V1KuIhDoGZW7XoJlAxmK5HQxfFkTCo1sCf\nFtShLNv1YY4hg0tQfxOmOrI4\n-----END PRIVATE KEY-----\n",
+  "client_email": "rcp-accesstoken@smart-recipe-app.iam.gserviceaccount.com",
+  "client_id": "101842226456970412683",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rcp-accesstoken%40smart-recipe-app.iam.gserviceaccount.com"
+}
