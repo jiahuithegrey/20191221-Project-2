@@ -71,6 +71,7 @@ a.button:hover{
 /* .or, .row-1, .row-2{
   border: 1px black solid;
 } */
+
 /* camera.html css --------------------------------------------*/
 .photo{
   margin-top: 50px;
@@ -163,6 +164,28 @@ th,td,tr{
   padding: 10px 20px;
 }
 
+/* recipe.html css --------------------------------------------*/
+#start-profile{
+  margin: 0 auto 10px auto;
+}
+#create-profile-btn, #no-profile-btn{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #e16556;
+  padding: 7px 30px;
+  width: 50%;
+}
+#create-profile-btn{
+  position: absolute; 
+  right: 0;  /* align to the right */
+  margin-right: 10px;
+}
+#no-profile-btn{
+  position: absolute; 
+  left: 0;  /* align to the left */
+  margin-left: 10px;
+}
 /* Bottom Footer --------------------------------------------*/
 footer {
   position: absolute;
