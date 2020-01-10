@@ -15,10 +15,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!-- Bootstrap Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
         <!-- Bootstrap compiled and minified CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
-        
+        <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
         <!-- Favicon and CSS -->
         <link rel="shortcut icon" type="image/png" href="./img/food.png" />
         <link rel="stylesheet" href="./css/styles.css" />
@@ -27,60 +27,72 @@
     </head>
  
 <body>
-    <!-- Top Navbar -->
     <header>
         <div class="collapse bg-dark" id="navbarHeader">
           <div class="container">
             <div class="row">
               <div class="col-sm-8 col-md-7 py-4">
                 <h4 class="text-white">About</h4>
-                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+                <p class="text-white">MySmartRecipe is based on food photo recognition to get probable ingredients, then recommend recipes of the ingredients user picks.</p>
               </div>
               <div class="col-sm-4 offset-md-1 py-4">
-                <h4 class="text-white">Contact</h4>
+                <h4 class="text-white">Introduction</h4>
                 <ul class="list-unstyled">
-                  <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                  <li><a href="#" class="text-white">Like on Facebook</a></li>
-                  <li><a href="#" class="text-white">Email me</a></li>
+                  <li><a href="#" class="text-white">Team</a></li>
+                  <li><a href="#" class="text-white">Technology</a></li>
+                  <li><a href="#" class="text-white">Documentation</a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
-          <div class="container d-flex justify-content-between">
+            <div class="container d-flex justify-content-between">
             <a href="index.html" class="navbar-brand d-flex align-items-center">
-              <img id="app-logo" src="img/food.png">
-              <strong>&nbspMySmartRecipe</strong>
+                <img id="app-logo" src="img/applogo.png">
+                <strong id="app-name">&nbspMySmartRecipe</strong>
             </a>
-            <!-- how to make toggle work? -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-        </div>
-      </header>
-
-      <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-                <h4>Selected Ingriedients:</h4>
             </div>
         </div>
-
+    </header>
+    
+    <!-- Ingredients picked-->
+      <div class="container main">
         <div class="row">
-            <div class="col-sm-12 col-md-6">
+            <div class="col-sm-12 col-md-4">
+                <h4>Selected Ingredients:</h4>
+            </div>
+        </div>
+    <!-- Recipes cards -->
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
                 <h4>Recipes:</h4>
             </div>
         </div>
     </div>
 
+    <!-- prompt to create profile -->
+    <div class="container two-buttons">
+        <div class="row">
+            <h5 id="start-profile">Would you like to create a profile?</h5>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 text-center">       
+                <a class="button" href="createprofile.html" id="create-profile-btn" role="button">Create A Profile</a>  
+            </div>
+            
+            <div class="col-sm-12 col-md-6 text-center">  
+                <a class="button" href="index.html" id="no-profile-btn" role="button">No I'm good</a>              
+            </div> 
+        </div> 
+    </div>
 
 <script src="script.js"></script>
 
-<script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-
-<footer class="bg-dark text-center text-muted">
+<footer class="text-center text-light">
     <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
 </footer>
 </body>

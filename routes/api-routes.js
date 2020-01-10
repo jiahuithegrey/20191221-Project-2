@@ -14,7 +14,19 @@ module.exports = function (app) {
         });
     });
 
-    //app.post for creating new user
+    app.post("/api/recipes", function(req, res) {
+        //adds recipe to user
+        db.Recipe.create(req.body).then(function(dbRecipe) {
+            res.json(dbRecipe);
+        });
+    });
+
+    app.post("/api/users", function(req, res) {
+        //adds new user
+        db.User.create(req.body).then(function(dbUser) {
+            res.json(dbUser);
+        });
+    });
 
     app.get("/api/recipes", function (req, res) {
         //pulls all saved recipes from one user

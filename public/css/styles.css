@@ -2,64 +2,86 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-/* scroll smoothly effect */
-html {
+/* scroll smoothly effect, not using for now */
+/* html {
   scroll-behavior: smooth;
-}
+} */
+
 /* Top Navbar --------------------------*/
-nav {
-  padding: 5px 10px !important;
-  border-bottom: 1px solid #ccc;
+#navbarHeader, .navbar{
+  background-color: #e16556 !important;
 }
-.navbar-brand {
-  color: #ec866f !important;
+.navbar-toggler{
+  color: white;
+  border: none;
 }
-#project-name {
-  margin-bottom: 0;
+a.button:hover{
+  text-decoration: none;
+  color: #e16556 !important;
+  background-color: #a9d7cc !important;
 }
-.nav-item {
-  font-weight: bold;
-}
-.nav-link {
-  border-right: 1px solid #ec866f;
-  padding: 0 12px !important;
-}
-#last-nav {
-  border-right: 0;
-}
-.nav-scroll-bg {
-  background-color: white;
-}
-.active {
-  color: #ec866f !important;
-}
-/* index css---------------------------------------------------- */
+
+/* index.html css---------------------------------------------------- */
 #app-logo{
-  width: 20px;
+  width: 28px;
 }
-.process{
-  margin-top: 50px;
+#app-name{
+  font-size: 24px;
+}
+.process, .start{
+  margin-top: 40px;
+}
+#process-diagram{
+  width: 90%;
 }
 #process-title{
-  display: block;
-  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 5%;
 }
-.button-group{
+#process-subtitle{
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+}
+#start-title{
+  margin: 0 auto 20px auto;
+}
+.two-buttons{
   margin-top: 50px;
 }
 #camera-button, #upload-button{
+  font-size: 20px;
+  font-weight: bold;
   color: white;
-  background-color: #ec866f;
-  padding: 10px 20px;
+  background-color: #e16556;
+  padding: 7px 30px;
+  width: 60%;
 }
+#camera-button{
+  position: absolute; 
+  right: 0;  /* align to the right */
+}
+#upload-button{
+  position: absolute; 
+  left: 0;  /* align to the left */
+}
+#or{
+  margin: 8px auto;
+}
+/* .or, .row-1, .row-2{
+  border: 1px black solid;
+} */
 
-/* camera css --------------------------------------------*/
+/* camera.html css --------------------------------------------*/
+.photo{
+  margin-top: 50px;
+}
 #video {
-  border: 1px solid #ec866f;
+  border: 1px solid #e16556;
   height: 240px;
 }
 #photo {
-  border: 1px solid #ec866f;
+  border: 1px solid #e16556;
   height: 240px; 
 }
 #canvas {
@@ -69,65 +91,150 @@ nav {
   display: inline-block;
 }
 .output {
-  /* width: 340px; */
   display: inline-block;
 }
-/* what's this? */
-.contentarea { 
+/* .contentarea { 
   font-size: 16px;
   font-family: "Lucida Grande", "Arial", sans-serif;
-  /* width: 760px; */
-}
+} */
 .camera-group{
   margin-top:50px;
 }
-#startbutton{
+.button-group{
+  margin-top: 60px;
+}
+.second-button{
+  margin-top: 30px;
+}
+#start-button{
+  font-size: 18px;
+  font-weight: bold;
   color: white;
-  background-color: #ec866f;
-  border: 0;
+  background-color: #e16556;
   padding: 10px 20px;
-  margin-top: 30px;
 }
-.ingredient-row{
-  margin-top: 30px;
-}
-#ingredient-button {
-  text-decoration: none;
+#ingredient-button{
+  font-size: 18px;
+  font-weight: bold;
   color: white;
-  background-color: #ec866f;
-  padding: 13px 25px;
-}
-/* Ingredient Page --------------------------------------------*/
-#retake-button{
-  display: block;
-  color: white;
-  background-color: #ec866f;
-  border: 0;
-  width: 180px;
+  background-color: #e16556;
   padding: 10px 20px;
-  margin-top: 30px;
 }
+
+/* ingredient.html css--------------------------------------------*/
 .main{
   margin-top:40px;
 }
+.photo-col{
+  background-color: #a9d7cc;
+  padding: 0;
+}
+/* .photo-row{
+  margin-left: 0;
+  margin-right: 0;
+} */
+#photo-captured{
+  margin: 20px auto 40px auto;
+}
+#retake-button{
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #e16556;
+  border: 1px solid #e16556;
+  padding: 3px 7px;
+  margin: 0 auto 40px auto;
+}
+#retake-button:hover{
+  text-decoration: none;
+  color: white !important;
+  background-color: #e16556 !important;
+}
+.table-col{
+  padding-left: 50px;
+}
+th,td,tr{
+  padding-left: 0 !important;
+}
 #recipe-button{
+  font-size: 18px;
+  font-weight: bold;
   color: white;
-  background-color: #ec866f;
+  background-color: #e16556;
   padding: 10px 20px;
 }
 
+/* recipe.html css --------------------------------------------*/
+#start-profile{
+  margin: 0 auto 10px auto;
+}
+#create-profile-btn, #no-profile-btn{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #e16556;
+  padding: 7px 30px;
+  width: 50%;
+}
+#create-profile-btn{
+  position: absolute; 
+  right: 0;  /* align to the right */
+  margin-right: 10px;
+}
+#no-profile-btn{
+  position: absolute; 
+  left: 0;  /* align to the left */
+  margin-left: 10px;
+}
 
-
+/* createprofile.html css --------------------------------------------*/
+#sign-up-btn{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #e16556;
+  padding: 5px 30px;
+  width: 30%;
+}
+#here{
+  color: #e16556;
+  font-weight: bold;
+}
 /* Bottom Footer --------------------------------------------*/
 footer {
-  margin-top: 150px;
   position: absolute;
+  bottom: 0;
   width: 100%;
   height: 40px; /* Set the fixed height of the footer */
+  background-color: #e16556;
 }
 #copyright {
   font-size: 14px;
   margin-top: 10px;
   margin-bottom: 0;
   height: 50px;
+}
+
+/* Media Query --------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #camera-button, #upload-button{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    position: relative; /* reset alignment for mobile! */
+  }
+  .row-1, .row-2{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #start-title{
+    font-size: 18px;
+  }
+  #or{
+    font-size: 14px;
+    margin: 8px auto;
+  }
 }
