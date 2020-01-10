@@ -186,6 +186,20 @@ th,td,tr{
   left: 0;  /* align to the left */
   margin-left: 10px;
 }
+
+/* createprofile.html css --------------------------------------------*/
+#sign-up-btn{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #e16556;
+  padding: 5px 30px;
+  width: 30%;
+}
+#here{
+  color: #e16556;
+  font-weight: bold;
+}
 /* Bottom Footer --------------------------------------------*/
 footer {
   position: absolute;
