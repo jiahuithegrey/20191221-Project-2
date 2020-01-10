@@ -11,11 +11,8 @@ module.exports = function(app) {
   app.get("/clarifai/food", function(req, res) {
     //const imgUrl = req.body.img;
 
-    //localstorage get
-    var dataImage = localStorage.getItem("bufferImage");
-    imgUrl = "data:image/png" + dataImage;
+    var imgUrl = document
 
-    //api call
     clariApp.models
       .predict("bd367be194cf45149e75f01d59f77ba7", imgUrl, { minValue: 0.6 })
       .then(response => {
