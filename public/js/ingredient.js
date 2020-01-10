@@ -14,4 +14,16 @@ $(document).ready(function() {
             $("#predicted-ingredients").append(tr);
         }
     });
+
+    $("#recipe-button").on("click", function(event) {
+        let checkedIngreds = [];
+        let checkboxes = $("input[type=checkbox]");
+        for (let checkbox of checkboxes) {
+            if (checkbox.checked) {
+                checkedIngreds.push(checkbox.value)
+            }
+        }
+        let ingredStr = checkedIngreds.join(",")
+        localStorage.setItem("ingredients", ingredStr)
+    })
 })
