@@ -20,6 +20,7 @@ a.button:hover{
   color: #e16556 !important;
   background-color: #a9d7cc !important;
 }
+
 /* index.html css---------------------------------------------------- */
 #app-logo{
   width: 28px;
@@ -42,17 +43,34 @@ a.button:hover{
   display: block;
   margin-top: 10px;
 }
+#start-title{
+  margin: 0 auto 20px auto;
+}
 .two-buttons{
   margin-top: 50px;
 }
 #camera-button, #upload-button{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   background-color: #e16556;
-  padding: 15px 100px;
-  width: 100%;
+  padding: 7px 30px;
+  width: 60%;
 }
+#camera-button{
+  position: absolute; 
+  right: 0;  /* align to the right */
+}
+#upload-button{
+  position: absolute; 
+  left: 0;  /* align to the left */
+}
+#or{
+  margin: 8px auto;
+}
+/* .or, .row-1, .row-2{
+  border: 1px black solid;
+} */
 
 /* camera.html css --------------------------------------------*/
 .photo{
@@ -146,6 +164,42 @@ th,td,tr{
   padding: 10px 20px;
 }
 
+/* recipe.html css --------------------------------------------*/
+#start-profile{
+  margin: 0 auto 10px auto;
+}
+#create-profile-btn, #no-profile-btn{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #e16556;
+  padding: 7px 30px;
+  width: 50%;
+}
+#create-profile-btn{
+  position: absolute; 
+  right: 0;  /* align to the right */
+  margin-right: 10px;
+}
+#no-profile-btn{
+  position: absolute; 
+  left: 0;  /* align to the left */
+  margin-left: 10px;
+}
+
+/* createprofile.html css --------------------------------------------*/
+#sign-up-btn{
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #e16556;
+  padding: 5px 30px;
+  width: 30%;
+}
+#here{
+  color: #e16556;
+  font-weight: bold;
+}
 /* Bottom Footer --------------------------------------------*/
 footer {
   position: absolute;
@@ -159,4 +213,28 @@ footer {
   margin-top: 10px;
   margin-bottom: 0;
   height: 50px;
+}
+
+/* Media Query --------------------------------------------*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #camera-button, #upload-button{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    position: relative; /* reset alignment for mobile! */
+  }
+  .row-1, .row-2{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  #start-title{
+    font-size: 18px;
+  }
+  #or{
+    font-size: 14px;
+    margin: 8px auto;
+  }
 }
