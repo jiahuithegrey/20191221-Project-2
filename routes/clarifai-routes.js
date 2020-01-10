@@ -27,7 +27,6 @@ module.exports = function(app) {
             entry.prob = Math.round(pred.value * 1000) / 10; // Converted to percentage.
             predictions.push(entry);
           });
-          console.log(predictions);
           res.json(predictions);
         })
         .catch(err => {
