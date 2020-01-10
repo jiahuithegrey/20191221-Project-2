@@ -1,7 +1,7 @@
 {
   "name": "20191221-project-2",
   "version": "1.0.0",
-  "description": "",
+  "description": "About: https://docs.google.com/document/d/1T-yfJBx2ReR8gsuHW59cqFKRo6gnVL9oBwvQY1tedHc/edit",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

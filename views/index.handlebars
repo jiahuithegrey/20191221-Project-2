@@ -1,22 +1,28 @@
-<img id="header-burger"src="public/assets/burgertitle.jpeg" alt="burger-icon">
-<h1 id="title">Smart Recipe Logger</h1>
+{{!-- process diagrams --}}
+<div class="process">
+  <div class="text-center">
+    <a href="https://docs.clarifai.com/" target="_blank">
+      <img id="process-diagram" src="img/process.jpg" alt="process-diagram"></a>
+    <h8 class="text-muted" id="process-title">From Clarifai Guide</h8>
+  </div>
+</div>
 
-<form id="add-burger">
-	<textarea type="text" name="burger"></textarea>
-	<button type="submit">Submit</button>
-</form>
-<h4>Enter a burger you want to eat!</h4>
+{{!-- two buttons --}}
+<div class="container button-group">
+  <div class="row justify-content-around">
+    <div class="col-sm-12 col-md-6 text-center">
+      <a href="/camera" id="camera-button" role="button">Snap a photo!</a>
+    </div>
+    <div class="col-sm-12 col-md-6 text-center">
+      <a href="/upload" id="upload-button" role="button">Upload a pic!</a>
+    </div>
+  </div>
+</div>
 
-<ul>
-  {{#each burgers}}
-    <li>
-      <p>
-        {{this.id}}. {{this.burger}}
-
-        <button data-burgerid="{{this.id}}" class="devour">Devour it!</button>
-      </p>
-    </li>
-  {{/each}}
-</ul>
 
 <script src="script.js"></script>
+
+<!-- sticky footer? -->
+<footer class="text-center text-light">
+  <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
+</footer>

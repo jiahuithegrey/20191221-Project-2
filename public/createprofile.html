@@ -20,7 +20,7 @@
         <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <!-- Favicon and CSS -->
-        <link rel="shortcut icon" type="image/png" href="./img/applogo2.png" />
+        <link rel="shortcut icon" type="image/png" href="./img/food.png" />
         <link rel="stylesheet" href="./css/styles.css" />
     
         <title>MySmartRecipe</title>
@@ -40,7 +40,7 @@
                 <ul class="list-unstyled">
                   <li><a href="#" class="text-white">Team</a></li>
                   <li><a href="#" class="text-white">Technology</a></li>
-                  <li><a href="https://github.com/jiahuithegrey/20191221-Project-2" target="_blank" class="text-white">Codebase</a></li>
+                  <li><a href="https://github.com/jiahuithegrey/20191221-Project-2" class="text-white">Codebase</a></li>
                 </ul>
               </div>
             </div>
@@ -48,7 +48,7 @@
         </div>
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex justify-content-between">
-            <a href="/" class="navbar-brand d-flex align-items-center">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
                 <img id="app-logo" src="img/applogo.png">
                 <strong id="app-name">&nbspMySmartRecipe</strong>
             </a>
@@ -58,8 +58,39 @@
             </div>
         </div>
     </header>
-    
-	{{{ body }}}
+
+    <div class="container main">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h4>Sign Up Form</h4>
+
+            <form class="signup">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="email-input" placeholder="hpotter.gryffindor@hogwarts.edu">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="password-input" placeholder="password">
+              </div>
+              <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span> <span class="msg"></span>
+              </div>
+              <a type="submit" id="sign-up-btn" class="button text-center">Sign Up</a>
+            </form>
+            <br />
+            <p>Or log in <a id="here" href="/login">here</a></p>
+          </div>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+
+    <!-- sticky footer? -->
+    <footer class="text-center text-light">
+        <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
+    </footer>
+
 </body>
 </html>
-
