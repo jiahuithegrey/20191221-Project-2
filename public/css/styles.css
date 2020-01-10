@@ -54,12 +54,23 @@ a.button:hover{
   font-weight: bold;
   color: white;
   background-color: #e16556;
-  padding: 10px 40px;
-  width: 100%;
+  padding: 7px 30px;
+  width: 60%;
 }
-.or, .row-1, .row-2{
+#camera-button{
+  position: absolute; 
+  right: 0;
+}
+#upload-button{
+  position: absolute; 
+  left: 0;
+}
+#or{
+  margin: 8px auto;
+}
+/* .or, .row-1, .row-2{
   border: 1px black solid;
-}
+} */
 /* camera.html css --------------------------------------------*/
 .photo{
   margin-top: 50px;
