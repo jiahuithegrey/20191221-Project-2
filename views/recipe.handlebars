@@ -14,7 +14,7 @@
         </div>
     </div>
     <div class="modal fade" id="recipe-instructions" tabindex="-1" role="dialog" aria-labelledby="recipe instructions" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="recipe-title"></h5>
@@ -26,26 +26,18 @@
                     <img id="recipe-img" class="card-img-top">
                     <p id="cooking-time"></p>
                     <p id="servings"></p>
-                    <p id="ingredients"></p>
-                    <p id="instructions>"></p>
+                    <h4>Ingredients</h4>
+                    <ul id="ingredients"></ul>
+                    <h4>Instructions</h4>
+                    <ol id="instructions"></ol>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <a href="" class="btn btn-primary" target="_blank">Go To Source</a>
+                    <a id="recipe-source" href="" class="btn btn-primary" target="_blank">Go To Source</a>
                 </div>
             </div>
         </div>
         </div>
-
-    {{!-- card --}}
-    {{!-- <div class="card">
-    <img src="..." class="card-img-top" alt="dish-pic">
-        <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-            <a href="#" class="btn btn-primary">See Recipe Link</a>
-        </div>
-    </div> --}}
 
     <!-- prompt to create profile -->
     <div class="container two-buttons">
