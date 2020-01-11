@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 /* scroll smoothly effect, not using for now */
 /* html {
@@ -57,15 +59,17 @@ a.button:hover{
 .why-graphic, .why-text{
   margin: 0 auto;
 }
-.process, .start{
-  margin-top: 40px;
+.start{
+  margin-top: 50px;
+}
+.process{
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* background-color: #F8F8F8; */
 }
 #process-diagram{
   width: 90%;
-}
-#process-title{
-  font-size: 20px;
-  margin-left: 5%;
 }
 #process-subtitle{
   font-size: 12px;
