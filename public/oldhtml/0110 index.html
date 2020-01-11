@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- jquery CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Bootstrap Latest compiled and minified JavaScript -->
+        <script src="https://getbootstrap.com/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <!-- Bootstrap compiled and minified CSS -->
+        <link href="https://getbootstrap.com/docs/4.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Favicon and CSS -->
+        <link rel="shortcut icon" type="image/png" href="./img/applogo2.png" />
+        <link rel="stylesheet" href="./css/styles.css" />
+    
+        <title>MySmartRecipe</title>
+    </head>
+ 
+<body>
+    <!-- <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-white">MySmartRecipe is based on food photo recognition to get probable ingredients, then recommend recipes of the ingredients user picks.</p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Introduction</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Team</a></li>
+                  <li><a href="#" class="text-white">Technology</a></li>
+                  <li><a href="https://github.com/jiahuithegrey/20191221-Project-2" target="_blank" class="text-white">Codebase</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img id="app-logo" src="img/applogo.png">
+                <strong id="app-name">&nbspMySmartRecipe</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+        </div>
+    </header> -->
+
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+        <div class="container d-flex justify-content-between">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <img id="app-logo" src="img/applogo.png">
+                <strong id="app-name">&nbspMySmartRecipe</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="log-in" href="/signin">LOG IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sign-up" href="/createprofile">SIGN UP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+   
+    <img id="jumbotron" src="img/jumbotron2.jpg">
+
+    <!-- why MySmartRecipe? -->
+    <div class="container why">
+        <div class="row ">
+            <div class="col-12 text-center">
+                <h4 id="question">Why MySmartRecipe?</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="row">
+                    <img class="why-graphic" id="phone-img" src="img/phone.png">
+                </div>
+                <div class="row text-center">
+                    <h6 class="why-text"><strong>Fast and effiecient</strong></h6>
+                    <p class="why-text sm-text">All you need to do is taking a photo of your ingredients onhand</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="row">
+                    <img class="why-graphic" src="img/tech.png">
+                </div>
+                <div class="row text-center">
+                    <h6 class="why-text title"><strong>Smart and intelligent</strong></h6>
+                    <p class="why-text sm-text">Based on image recognition Technology</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="row">
+                    <img class="why-graphic" src="img/food.png">
+                </div>
+                <div class="row text-center">
+                    <h6 class="why-text"><strong>Healthy and delish</strong></h6>
+                    <p class="why-text sm-text">Taking full control of what you eat and food quality</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="row">
+                    <img class="why-graphic" src="img/money.png">
+                </div>
+                <div class="row text-center">
+                    <h6 class="why-text"><strong>Affordable and convenient</strong></h6>
+                    <p class="why-text sm-text">Groceries saves money without you noticing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container process">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h4 id="process-title">How it works:</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <a href="https://docs.clarifai.com/" target="_blank">
+                        <img id="process-diagram" src="img/process.jpg" alt="process-diagram"></a>
+                    <h8 class="text-muted" id="process-subtitle">From clarifai.com</h8>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <div class="container two-buttons">
+        <div class="row">
+            <h3 id="start-title">Get started!</h3>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-5 row-1 text-center">       
+                <a class="button" href="camera.html" id="camera-button" role="button">Take a photo!</a>  
+            </div>
+            <div class="col-sm-12 col-md-2 text-center or">       
+                <h4 id="or">or</h4> 
+            </div>
+            <div class="col-sm-12 col-md-5 row-2 text-center">  
+                <a class="button" href="upload.html" id="upload-button" role="button">Upload a photo!</a>              
+            </div> 
+        </div> 
+    </div>
+   
+    
+    <script src="script.js"></script>
+
+    <!-- sticky footer? -->
+    <footer class="text-center text-light">
+        <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>
+    </footer>
+
+
+</body>
+</html>

@@ -15,7 +15,8 @@ module.exports = function(app) {
     }); 
 
     app.get("/recipe", function(req, res) {
-        res.render("recipe", {recipes: ["waffle", "fish", "bbq"]});
+        res.render("recipe");
+        // res.render("recipe", {recipes: ["waffle", "fish", "bbq"]});
     });  
 
     app.get("/createprofile", function(req, res) {
