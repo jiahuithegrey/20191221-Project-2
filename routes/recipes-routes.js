@@ -2,8 +2,8 @@ const axios = require("axios");
 
 module.exports = function(app) {
   // Get a list of recipes based off ingredients
-  app.get("/recipes/search/ingredients", function(req, res) {
-    const ingredients = req.body.ingredients.join(",");
+  app.get("/recipes/search/:ingredients", function(req, res) {
+    const ingredients = req.params.ingredients;
     axios({
       method: "GET",
       url:
@@ -30,9 +30,8 @@ module.exports = function(app) {
   });
 
   // Get recipe information by id in bulk.
-  app.get("/recipes/search/id/bulk", function(req, res) {
-    const ids = req.body.ids.join(",");
-
+  app.get("/recipes/search/bulk/:ids", function(req, res) {
+    const ids = req.params.ids;
     axios({
       method: "GET",
       url:
@@ -58,8 +57,7 @@ module.exports = function(app) {
             title: response.data[i].title,
             sourceUrl: response.data[i].sourceUrl,
             image: response.data[i].image,
-            preparationMinutes: response.data[i].preparationMinutes,
-            cookingMinutes: response.data[i].cookingMinutes,
+            cookingMinutes: response.data[i].readyInMinutes,
             servings: response.data[i].servings,
             extendedIngredients: response.data[i].extendedIngredients,
             analyzedInstructions: response.data[i].analyzedInstructions
