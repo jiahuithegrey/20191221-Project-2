@@ -23,13 +23,13 @@ $(document).ready(function() {
     });
 
     function loginUser(email, password) {
-        $.post("/api/login", {
+        $.post("/api/signin", {
             userName: userName,
             emailAddress: emailAddress,
             password: password
         })
         .then(function() {
-            window.location.replace("/index");
+            window.location.replace("/");
         })
         .catch(handleLoginErr);
     }

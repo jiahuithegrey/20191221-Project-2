@@ -1,4 +1,5 @@
 const Clarifai = require("clarifai");
+const fs = require("fs")
 
 const clarifaiAPI = "b23c4e19e7774cb09f6d05960744da61";
 const clariApp = new Clarifai.App({ apiKey: clarifaiAPI });
@@ -9,27 +10,30 @@ const clariApp = new Clarifai.App({ apiKey: clarifaiAPI });
 module.exports = function(app) {
   // Predict the contents of an image by passing in a URL.
   app.get("/clarifai/food", function(req, res) {
-    //const imgUrl = req.body.img;
+    const imgUrl = "./public/img/foodToAnalyze.png";
 
-    //localstorage get
-    var dataImage = localStorage.getItem("bufferImage");
-    imgUrl = "data:image/png" + dataImage;
+    fs.readFile(imgUrl, function(err, data) {
+      if (err) throw err;
 
-    //api call
-    clariApp.models
-      .predict("bd367be194cf45149e75f01d59f77ba7", imgUrl, { minValue: 0.6 })
-      .then(response => {
-        let predictions = [];
-        response.outputs[0].data.concepts.forEach(pred => {
-          let entry = {};
-          entry.name = pred.name;
-          entry.prob = Math.round(pred.value * 1000) / 10; // Converted to percentage.
-          predictions.push(entry);
+      const imgBase64 = data.toString("base64");
+      
+      clariApp.models
+        .predict("bd367be194cf45149e75f01d59f77ba7", imgBase64, { minValue: 0.6 })
+        .then(response => {
+          let predictions = [];
+          response.outputs[0].data.concepts.forEach(pred => {
+            let entry = {};
+            entry.name = pred.name;
+            entry.prob = Math.round(pred.value * 1000) / 10; // Converted to percentage.
+            predictions.push(entry);
+          });
+          res.json(predictions);
+        })
+        .catch(err => {
+          console.log(err);
         });
-        res.json(predictions);
-      })
-      .catch(err => {
-        console.log(err);
-      });
+
+    })
+
   });
 };
