@@ -12,24 +12,25 @@
                 <h4>Recipes:</h4>
                 {{!-- put recipe cards here --}}
                 {{#each recipes}}
-                <div>
-                    {{this}}
-                </div>
+                
+                    
+                    {{!-- card --}}
+    <div class="card">
+        <img src="{{this.image}}" class="card-img-top" alt="dish-pic">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">{{this}}</p>
+            <a href="#" class="btn btn-primary">See Recipe Link</a>
+        </div>
+    </div>
+
+                
                 {{/each}}
             </div>
         </div>
     </div>
 
-    {{!-- card --}}
-    <div class="card">
-    <img src="..." class="card-img-top" alt="dish-pic">
-    <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text"></p>
-        <a href="#" class="btn btn-primary">See Recipe Link</a>
-    </div>
-    </div>
-
+    
     <!-- prompt to create profile -->
     <div class="container two-buttons">
         <div class="row">

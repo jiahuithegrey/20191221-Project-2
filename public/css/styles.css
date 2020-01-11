@@ -8,13 +8,13 @@
 } */
 
 /* Top Navbar --------------------------*/
-#navbarHeader, .navbar{
+/* #navbarHeader, .navbar{
   background-color: #e16556 !important;
 }
 .navbar-toggler{
   color: white;
   border: none;
-}
+} */
 a.button:hover{
   text-decoration: none;
   color: #e16556 !important;
@@ -26,7 +26,27 @@ a.button:hover{
   width: 28px;
 }
 #app-name{
+  color: #e16556;
   font-size: 24px;
+}
+#log-in{
+  color: #6a6d75;
+  font-size: 13px;
+}
+#sign-up{
+  color: white;
+  background-color: #e16556;
+  font-size: 13px;
+}
+/* .flat-lay{
+  padding: 0;
+  margin: 0;
+}
+.flat-lay-row{
+  margin: 0;
+} */
+#jumbotron{
+  width: 100%;
 }
 .process, .start{
   margin-top: 40px;
