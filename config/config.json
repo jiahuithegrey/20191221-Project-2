@@ -1,11 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "whotoldU2think",
-=======
-    "password": "1990Lucky",
->>>>>>> origin/master
+    "password": "Mypassword",
     "database": "food",
     "host": "127.0.0.1",
     "port": 3306,
@@ -13,7 +9,7 @@
   },
   "test": {
     "username": "root",
-    "password": "1990Lucky",
+    "password": "Mypassword",
     "database": "database_test",
     "host": "127.0.0.1",
     "port": 3306,
@@ -21,7 +17,7 @@
   },
   "production": {
     "username": "root",
-    "password": "1990Lucky",
+    "password": "Mypassword",
     "database": "database_production",
     "host": "127.0.0.1",
     "port": 3306,
