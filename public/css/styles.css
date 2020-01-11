@@ -229,6 +229,9 @@ th,td,tr{
   left: 0;  /* align to the left */
   margin-left: 10px;
 }
+#see-recipe{
+  background-color: #a9d7cc !important; 
+}
 
 /* createprofile.html css --------------------------------------------*/
 #sign-up-btn, #login-btn{
