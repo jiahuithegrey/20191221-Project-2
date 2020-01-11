@@ -1,3 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+  <div class="container d-flex justify-content-between">
+      <a href="/" class="navbar-brand d-flex align-items-center">
+          <img id="app-logo" src="img/applogo.png">
+          <strong id="app-name">&nbspMySmartRecipe</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+              data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+              aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse order-3 dual-collapse2">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" id="log-in" href="/signin">LOG IN</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="sign-up" href="/createprofile">SIGN UP</a>
+              </li>
+          </ul>
+      </div>
+  </div>
+</nav>
+
 <div class="container main">
         <div class="row big-row">
             <div class="col-sm-12 col-md-8 text-center photo-col ">
@@ -21,27 +45,7 @@
                       <th scope="col">SELECTION</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>syrup</td>
-                      <td>98.8%</td>
-                      <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
-                    </tr>
-                    <tr>
-                      <td>waffle</td>
-                      <td>98.0%</td>
-                      <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
-                    </tr>
-                    <tr>
-                      <td>french toast</td>
-                      <td>95.7%</td>
-                      <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
-                    </tr>
-                    <tr>
-                      <td>coffee</td>
-                      <td>93.4%</td>
-                      <td><input class="checkbox" type="checkbox" aria-label="Checkbox"></td>
-                    </tr>
+                  <tbody id="predicted-ingredients">
                   </tbody>
                 </table>
               </div>

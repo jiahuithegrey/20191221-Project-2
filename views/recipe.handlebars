@@ -1,35 +1,68 @@
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container d-flex justify-content-between">
+        <a href="/" class="navbar-brand d-flex align-items-center">
+            <img id="app-logo" src="img/applogo.png">
+            <strong id="app-name">&nbspMySmartRecipe</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse order-3 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" id="log-in" href="/signin">LOG IN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="sign-up" href="/createprofile">SIGN UP</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <!-- Ingredients picked-->
-      <div class="container main">
+    <div class="container main">
         <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <h4>Selected Ingredients:</h4>
+            <div class="col-sm-12">
+                <h4>Selected Ingredients: <span id="selected-ingreds"></span></h4>
             </div>
         </div>
 
         <!-- Recipes cards -->
-        <div class="row">
-            <div class="col-sm-12 col-md-4">
+        <div class="row" id="recipe-cards">
+            <div class="col-sm-12 col-md-12">
                 <h4>Recipes:</h4>
-                {{!-- put recipe cards here --}}
-                {{#each recipes}}
-                <div>
-                    {{this}}
-                </div>
-                {{/each}}
             </div>
         </div>
     </div>
-
-    {{!-- card --}}
-    <div class="card">
-    <img src="..." class="card-img-top" alt="dish-pic">
-    <div class="card-body">
-        <h5 class="card-title"></h5>
-        <p class="card-text"></p>
-        <a href="#" class="btn btn-primary">See Recipe Link</a>
-    </div>
-    </div>
-
+    <div class="modal fade" id="recipe-instructions" tabindex="-1" role="dialog" aria-labelledby="recipe instructions" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="recipe-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="recipe-img" class="card-img-top">
+                    <p id="cooking-time"></p>
+                    <p id="servings"></p>
+                    <h4>Ingredients</h4>
+                    <ul id="ingredients"></ul>
+                    <h4>Instructions</h4>
+                    <ol id="instructions"></ol>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a id="recipe-source" href="" class="btn btn-primary" target="_blank">Go To Source</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    
     <!-- prompt to create profile -->
     <div class="container two-buttons">
         <div class="row">
@@ -46,7 +79,7 @@
         </div> 
     </div>
 
-<script src="/js/frontend.js"></script>
+<script src="/js/recipe.js"></script>
 
 <footer class="text-center text-light">
     <p id="copyright">© 2019 Copyright Harry Jasmine Nicole Scott O.</p>

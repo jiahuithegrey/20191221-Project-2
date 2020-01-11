@@ -1,6 +1,8 @@
 * {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
 }
 /* scroll smoothly effect, not using for now */
 /* html {
@@ -8,13 +10,13 @@
 } */
 
 /* Top Navbar --------------------------*/
-#navbarHeader, .navbar{
+/* #navbarHeader, .navbar{
   background-color: #e16556 !important;
 }
 .navbar-toggler{
   color: white;
   border: none;
-}
+} */
 a.button:hover{
   text-decoration: none;
   color: #e16556 !important;
@@ -26,17 +28,58 @@ a.button:hover{
   width: 28px;
 }
 #app-name{
+  color: #e16556;
   font-size: 24px;
 }
-.process, .start{
+#log-in{
+  color: #6a6d75;
+  font-size: 13px;
+}
+#sign-up{
+  color: white;
+  background-color: #e16556;
+  font-size: 13px;
+}
+.navbar-toggler{
+  border: 0;
+}
+#jumbotron{
+  width: 100%;
+}
+.why{
   margin-top: 40px;
+}
+#question{
+  color: #343434;
+  margin-bottom: 20px;
+}
+.why-graphic{
+  margin: 0 auto;
+  width: 40%;
+  padding: 15px;
+}
+/* #phone-img{
+  width: 30%;
+} */
+.why-text{
+  margin: 0 auto;
+  color: #343434;
+}
+.sm-text{
+  font-size: 14px;
+  padding: 0 8px;
+}
+.start{
+  margin-top: 50px;
+}
+.process{
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* background-color: #F8F8F8; */
 }
 #process-diagram{
   width: 90%;
-}
-#process-title{
-  font-size: 20px;
-  margin-left: 5%;
 }
 #process-subtitle{
   font-size: 12px;
@@ -186,6 +229,10 @@ th,td,tr{
   left: 0;  /* align to the left */
   margin-left: 10px;
 }
+#see-recipe{
+  background-color: #a9d7cc !important;
+  border: none !important; 
+}
 
 /* createprofile.html css --------------------------------------------*/
 #sign-up-btn, #login-btn{
@@ -202,8 +249,9 @@ th,td,tr{
 }
 /* Bottom Footer --------------------------------------------*/
 footer {
+  margin-top: 100px;
   position: absolute;
-  bottom: 0;
+  /* bottom: 0; */
   width: 100%;
   height: 40px; /* Set the fixed height of the footer */
   background-color: #e16556;

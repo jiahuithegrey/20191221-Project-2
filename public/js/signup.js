@@ -27,7 +27,7 @@ $(document).ready(function() {
             password: password
         })
         .then(function(data) {
-            window.location.replace("/index");
+            window.location.replace("/");
         })
         .catch(handleSignInErr);
     }
