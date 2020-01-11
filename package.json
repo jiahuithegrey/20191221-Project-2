@@ -35,5 +35,6 @@
   "bugs": {
     "url": "https://github.com/jiahuithegrey/20191221-Project-2/issues"
   },
-  "homepage": "https://github.com/jiahuithegrey/20191221-Project-2#readme"
+  "homepage": "https://github.com/jiahuithegrey/20191221-Project-2#readme",
+  "devDependencies": {}
 }
