@@ -55,15 +55,19 @@ a.button:hover{
 }
 .why-graphic{
   margin: 0 auto;
-  width: 50%;
+  width: 40%;
+  padding: 15px;
 }
+/* #phone-img{
+  width: 30%;
+} */
 .why-text{
   margin: 0 auto;
   color: #343434;
 }
 .sm-text{
   font-size: 14px;
-  padding: 0 5px;
+  padding: 0 8px;
 }
 .start{
   margin-top: 50px;
