@@ -230,7 +230,8 @@ th,td,tr{
   margin-left: 10px;
 }
 #see-recipe{
-  background-color: #a9d7cc !important; 
+  background-color: #a9d7cc !important;
+  border: none !important; 
 }
 
 /* createprofile.html css --------------------------------------------*/
