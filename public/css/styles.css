@@ -40,13 +40,9 @@ a.button:hover{
   background-color: #e16556;
   font-size: 13px;
 }
-/* .flat-lay{
-  padding: 0;
-  margin: 0;
+.navbar-toggler{
+  border: 0;
 }
-.flat-lay-row{
-  margin: 0;
-} */
 #jumbotron{
   width: 100%;
 }
@@ -55,9 +51,19 @@ a.button:hover{
 }
 #question{
   color: #343434;
+  margin-bottom: 20px;
 }
-.why-graphic, .why-text{
+.why-graphic{
   margin: 0 auto;
+  width: 50%;
+}
+.why-text{
+  margin: 0 auto;
+  color: #343434;
+}
+.sm-text{
+  font-size: 14px;
+  padding: 0 5px;
 }
 .start{
   margin-top: 50px;
