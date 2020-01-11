@@ -54,6 +54,9 @@ a.button:hover{
 #question{
   color: #343434;
 }
+.why-graphic, .why-text{
+  margin: 0 auto;
+}
 .process, .start{
   margin-top: 40px;
 }
