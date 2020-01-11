@@ -36,6 +36,8 @@ app.set("view engine", "handlebars");
 // Routes, names are place holders
 require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
+require("./routes/clarifai-routes.js")(app);
+require("./routes/recipes-routes.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
 db.sequelize.sync({ force: true }).then(function() {

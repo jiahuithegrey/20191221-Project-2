@@ -11,7 +11,7 @@ module.exports = function(app) {
     }); 
     
     app.get("/ingredient", function(req, res) {
-        res.sendFile(path.join(__dirname, "../public/ingredient.html"));
+        res.render("ingredient");
     }); 
 
     app.get("/recipe", function(req, res) {

@@ -1,6 +1,8 @@
 var db = require("../models");
 const fs = require("fs")
 var passport = require("../config/passport");
+const base64Img = require("base64-img");
+
 
 module.exports = function (app) {
     app.get("/api/users/:id", function (req, res) {
@@ -79,19 +81,15 @@ module.exports = function (app) {
             });
     });
 
+    // Takes in the base64 of an image and saves it to a png.
     app.post("/saveImg", function(req, res) {
-        const img = req.body.img;
-        let buff = new Buffer(img, 'base64');
-        let text = buff.toString('ascii');
-        console.log(text.slice(0, 50))
-        // fs.writeFile("./public/img/analyzeImg.png", img, function(err) {
-        //     if (err) throw err;
-        //     console.log("Image saved.")
-        // })
-    })
+        const img = req.body.imgBase64;
+        base64Img.img(img, "./public/img/", "foodToAnalyze", function(err, filepath) {
+            if (err) throw err;
+        });
+    });
 
     //for signup/login
-
     app.post("/api/createprofile", function(req, res) {
         db.User.create({
             userName: req.body.userName,
