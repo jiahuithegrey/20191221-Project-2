@@ -48,6 +48,12 @@ a.button:hover{
 #jumbotron{
   width: 100%;
 }
+.why{
+  margin-top: 40px;
+}
+#question{
+  color: #343434;
+}
 .process, .start{
   margin-top: 40px;
 }
