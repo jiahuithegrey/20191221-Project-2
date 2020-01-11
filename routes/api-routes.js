@@ -1,6 +1,8 @@
 var db = require("../models");
 const fs = require("fs")
+var passport = require("../config/passport");
 const base64Img = require("base64-img");
+
 
 module.exports = function (app) {
     app.get("/api/users/:id", function (req, res) {
@@ -85,5 +87,24 @@ module.exports = function (app) {
         base64Img.img(img, "./public/img/", "foodToAnalyze", function(err, filepath) {
             if (err) throw err;
         });
+    });
+
+    //for signup/login
+    app.post("/api/createprofile", function(req, res) {
+        db.User.create({
+            userName: req.body.userName,
+            emailAddress: req.body.emailAddress,
+            password: req.body.password
+        })
+        .then(function() {
+            res.redirect(307, "/api/signin");
+        })
+        .catch(function(err) {
+            res.status(401).json(err);
+        });
+    });
+
+    app.post("/api/signin", passport.authenticate("local"), function(req, res) {
+        res.json(req.user);
     });
 };
