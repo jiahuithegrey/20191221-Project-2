@@ -2,7 +2,15 @@ var db = require("../models");
 const fs = require("fs")
 var passport = require("../config/passport");
 const base64Img = require("base64-img");
+var AWS = require('aws-sdk');
 
+AWS.config.update({
+    accessKeyId: process.env.AWS_ACCESS_KEY_ID, 
+    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    region: "us-west-2"
+});
+
+var s3 = new AWS.S3();
 
 module.exports = function (app) {
     app.get("/api/users/:id", function (req, res) {
@@ -81,11 +89,31 @@ module.exports = function (app) {
             });
     });
 
-    // Takes in the base64 of an image and saves it to a png.
-    app.post("/saveImg", function(req, res) {
+    // Takes in the base64 of an image and saves it to a png locally.
+    app.post("/saveImgLocally", function(req, res) {
         const img = req.body.imgBase64;
         base64Img.img(img, "./public/img/", "foodToAnalyze", function(err, filepath) {
             if (err) throw err;
+        });
+    });
+
+    // Takes in the base64 of an image and saves it to a png to AWS.
+    app.post("/saveImg", function(req, res) {
+        const img = req.body.imgBase64;
+        buf = new Buffer.from(img.replace("data:image/png;base64,", ""), 'base64');
+        var bucketName = 'mysmartrecipe206';
+        var params = {
+            Bucket: bucketName, 
+            Key: "foodToAnalyze", 
+            Body: buf, 
+            ContentType: 'image/png', 
+            ContentEncoding: 'base64',
+            ACL: 'public-read'
+        };
+        s3.upload(params, function (err, data) {
+            if (err) return res.status(500).send(err);
+            
+            res.json(data);
         });
     });
 
