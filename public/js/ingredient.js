@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#photo-captured").attr("src", "/img/foodToAnalyze.png");
+    $("#photo-captured").attr("src", "https://mysmartrecipe206.s3.us-west-2.amazonaws.com/foodToAnalyze");
     
     $.ajax({
         method: "GET",
